@@ -62,7 +62,22 @@ services.service('PartnersService', ['SpreadsheetService', function (Spreadsheet
 services.service('SponsorsService', ['SpreadsheetService', function (SpreadsheetService) {
 
     this.getMegaSponsors = function () {
-        var url = 'https://docs.google.com/spreadsheets/d/1yBtxDvGdVCK4Wp2TMZwPOvOhdfS5n1q4M5qEmXCZhmU/edit#gid=0';
+        var url = 'https://docs.google.com/spreadsheets/d/1yBtxDvGdVCK4Wp2TMZwPOvOhdfS5n1q4M5qEmXCZhmU/edit#gid=1442280856';
+        return SpreadsheetService.getSpreadsheet(url);
+    };
+
+    this.getGigaSponsors = function () {
+        var url = 'https://docs.google.com/spreadsheets/d/1yBtxDvGdVCK4Wp2TMZwPOvOhdfS5n1q4M5qEmXCZhmU/edit#gid=369074236';
+        return SpreadsheetService.getSpreadsheet(url);
+    };
+
+    this.getTeraSponsors = function () {
+        var url = 'https://docs.google.com/spreadsheets/d/1yBtxDvGdVCK4Wp2TMZwPOvOhdfS5n1q4M5qEmXCZhmU/edit#gid=1752138534';
+        return SpreadsheetService.getSpreadsheet(url);
+    };
+
+    this.getZettaSponsors = function () {
+        var url = 'https://docs.google.com/spreadsheets/d/1yBtxDvGdVCK4Wp2TMZwPOvOhdfS5n1q4M5qEmXCZhmU/edit#gid=1718571480';
         return SpreadsheetService.getSpreadsheet(url);
     };
 

@@ -270,10 +270,43 @@
                 </div>
             </div>
 
+            <!-- Sponsors: Zetta Sponsors -->
+            <div class="row" ng-repeat="row in zettaSponsors">
+
+                <div class="u-full-width" ng-repeat="sponsor in row">
+                    <a href="{{sponsor.cells.url}}">
+                        <img class="u-max-full-width" ng-src="{{sponsor.cells.logo}}" alt="{{sponsor.cells.name}}">
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Sponsors: Tera Sponsors -->
+            <div class="row" ng-repeat="row in teraSponsors">
+
+                <div class="six columns" ng-repeat="sponsor in row">
+                    <a href="{{sponsor.cells.url}}">
+                        <img class="u-max-full-width" ng-src="{{sponsor.cells.logo}}" alt="{{sponsor.cells.name}}">
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Sponsors: Giga Sponsors -->
+            <div class="row" ng-repeat="row in gigaSponsors">
+
+                <div class="four columns" ng-repeat="sponsor in row">
+                    <a href="{{sponsor.cells.url}}">
+                        <img class="u-max-full-width" ng-src="{{sponsor.cells.logo}}" alt="{{sponsor.cells.name}}">
+                    </a>
+                </div>
+
+            </div>
+
             <!-- Sponsors: Mega Sponsors -->
             <div class="row" ng-repeat="row in megaSponsors">
 
-                <div class="four columns" ng-repeat="sponsor in row">
+                <div class="three columns" ng-repeat="sponsor in row">
                     <a href="{{sponsor.cells.url}}">
                         <img class="u-max-full-width" ng-src="{{sponsor.cells.logo}}" alt="{{sponsor.cells.name}}">
                     </a>

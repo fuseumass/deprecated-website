@@ -60,7 +60,16 @@ controllers.controller('SponsorsController', ['$scope', 'SponsorsService',
     function ($scope, SponsorsService) {
         $scope.header = 'Sponsors';
         SponsorsService.getMegaSponsors().then(function (data) {
-            $scope.megaSponsors = _.chunk(data, 3);
+            $scope.megaSponsors = _.chunk(data, 4);
+        });
+        SponsorsService.getGigaSponsors().then(function (data) {
+            $scope.gigaSponsors = _.chunk(data, 3);
+        });
+        SponsorsService.getTeraSponsors().then(function (data) {
+            $scope.teraSponsors = _.chunk(data, 2);
+        });
+        SponsorsService.getZettaSponsors().then(function (data) {
+            $scope.zettaSponsors = _.chunk(data, 1);
         });
     }
 ]);
