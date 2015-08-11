@@ -1,0 +1,154 @@
+/* Bottom gear that is to the left of HackUMass. */
+#hackumass-logo-bottom-gear {
+    -webkit-animation: hackumass-logo-rotate 16s linear infinite;
+    -webkit-transform-origin: center;
+}
+
+/* Middle gear that is to the left of HackUMass. */
+#hackumass-logo-middle-gear {
+    -webkit-animation: hackumass-logo-rotate 16s linear infinite;
+    -webkit-animation-direction: reverse;
+    -webkit-transform-origin: center;
+}
+
+/* Top gear that is to the left of HackUMass. */
+#hackumass-logo-top-gear {
+    -webkit-animation: hackumass-logo-rotate 19.999s linear infinite;
+    -webkit-transform-origin: center;
+}
+
+/* LEDs */
+.hackumass-logo-red-led, .hackumass-logo-white-led {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/* Blink red LEDs on hover over logo */
+svg:hover .hackumass-logo-red-led {
+    fill: #550000;
+}
+
+/* Blink white LEDs on hover over logo */
+svg:hover .hackumass-logo-white-led {
+    fill: #fff;
+}
+
+/* Gray wire */
+.hackumass-logo-gray-wire {
+    -webkit-animation: hackumass-logo-pulse 1s linear infinite;
+    -moz-animation: hackumass-logo-pulse 1s linear infinite;
+    -ms-animation: hackumass-logo-pulse 1s linear infinite;
+    animation: hackumass-logo-pulse 1s linear infinite;
+    stroke: #cccccc;
+}
+
+/* Red wires */
+.hackumass-logo-red-wire {
+    -webkit-animation: hackumass-logo-pulse 1s linear infinite;
+    -moz-animation: hackumass-logo-pulse 1s linear infinite;
+    -ms-animation: hackumass-logo-pulse 1s linear infinite;
+    animation: hackumass-logo-pulse 1s linear infinite;
+    stroke: #ff0000;
+}
+
+/* White wires */
+.hackumass-logo-white-wire {
+    -webkit-animation: hackumass-logo-pulse 1s linear infinite;
+    -moz-animation: hackumass-logo-pulse 1s linear infinite;
+    -ms-animation: hackumass-logo-pulse 1s linear infinite;
+    animation: hackumass-logo-pulse 1s linear infinite;
+    stroke: #fff;
+}
+
+/* Hack text. */
+.hackumass-logo-hack {
+
+}
+
+/* UMass text. */
+.hackumass-logo-umass {
+    -webkit-animation: hackumass-logo-pulse 1s linear infinite;
+    -moz-animation: hackumass-logo-pulse 1s linear infinite;
+    -ms-animation: hackumass-logo-pulse 1s linear infinite;
+    animation: hackumass-logo-pulse 1s linear infinite;
+    stroke: #fff;
+}
+
+/* Pulse animation (webkit) */
+@-webkit-keyframes hackumass-logo-pulse {
+    0% {
+        stroke-width: 0;
+    }
+
+    50% {
+        stroke-width: 1.5;
+    }
+
+    100% {
+        stroke-width: 0;
+    }
+}
+
+/* Pulse animation (moz) */
+@-moz-keyframes hackumass-logo-pulse {
+    0% {
+        stroke-width: 0;
+    }
+
+    50% {
+        stroke-width: 1.5;
+    }
+
+    100% {
+        stroke-width: 0;
+    }
+}
+
+/* Pulse animation (keyframes) */
+@keyframes hackumass-logo-pulse {
+    0% {
+        stroke-width: 0;
+    }
+
+    50% {
+        stroke-width: 1.5;
+    }
+
+    100% {
+        stroke-width: 0;
+    }
+}
+
+/* Rotation animation (webkit) */
+@-webkit-keyframes hackumass-logo-rotate {
+    from {
+        -webkit-transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+/* Rotation animation (moz) */
+@-moz-keyframes hackumass-logo-rotate {
+    from {
+        -webkit-transform: rotate(0);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+/* Rotation animation (keyframes) */
+@keyframes hackumass-logo-rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
