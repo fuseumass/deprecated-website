@@ -205,6 +205,11 @@ a.social-media:hover {
     color: #1a1a1a;
 }
 
+#partners img {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
 #sponsors {
     background-color: #fff;
 }
@@ -216,6 +221,11 @@ a.social-media:hover {
 #sponsors p {
     text-align: center;
     color: #1a1a1a;
+}
+
+#sponsors img {
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 #footer {
