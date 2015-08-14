@@ -87,8 +87,20 @@ a.social-media:hover {
     color: #fff;
 }
 
-.sponsor-logo {
+#zetta-sponsorship-tier {
+    padding-bottom: 12px;
+}
 
+#tera-sponsorship-tier {
+    padding-bottom: 12px;
+}
+
+#giga-sponsorship-tier {
+    padding-bottom: 48px;
+}
+
+#mega-sponsorship-tier {
+    padding-bottom: 48px;
 }
 
 .sponsor-description {
@@ -205,11 +217,6 @@ a.social-media:hover {
     color: #1a1a1a;
 }
 
-#partners img {
-    padding-top: 48px;
-    padding-bottom: 48px;
-}
-
 #sponsors {
     background-color: #fff;
 }
@@ -221,11 +228,6 @@ a.social-media:hover {
 #sponsors p {
     text-align: center;
     color: #1a1a1a;
-}
-
-#sponsors img {
-    padding-top: 48px;
-    padding-bottom: 48px;
 }
 
 #footer {
