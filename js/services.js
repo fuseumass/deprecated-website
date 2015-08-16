@@ -52,8 +52,13 @@ services.service('ScheduleService', ['SpreadsheetService', function (Spreadsheet
 
 services.service('PartnersService', ['SpreadsheetService', function (SpreadsheetService) {
 
-    this.getPartners = function () {
+    this.getTierOnePartners = function () {
         var url = 'https://docs.google.com/spreadsheets/d/1Srh7O2CN81aawi_rKzbAFLYQ_CiptrVyL4Oku1HUZaQ/edit#gid=1442280856';
+        return SpreadsheetService.getSpreadsheet(url);
+    };
+
+    this.getTierTwoPartners = function () {
+        var url = 'https://docs.google.com/spreadsheets/d/1Srh7O2CN81aawi_rKzbAFLYQ_CiptrVyL4Oku1HUZaQ/edit#gid=247645414';
         return SpreadsheetService.getSpreadsheet(url);
     };
 

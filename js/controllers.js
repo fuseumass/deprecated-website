@@ -50,8 +50,11 @@ controllers.controller('ScheduleController', ['$scope', 'ScheduleService',
 controllers.controller('PartnersController', ['$scope', 'PartnersService',
     function ($scope, PartnersService) {
         $scope.header = 'Partners';
-        PartnersService.getPartners().then(function (data) {
-            $scope.partners = _.chunk(data, 3);
+        PartnersService.getTierOnePartners().then(function (data) {
+            $scope.tierOnePartners = _.chunk(data, 4);
+        });
+        PartnersService.getTierTwoPartners().then(function (data) {
+            $scope.tierTwoPartners = _.chunk(data, 6);
         });
     }
 ]);

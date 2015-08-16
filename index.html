@@ -229,6 +229,7 @@
 
     <!-- Partners -->
     <section id="partners" ng-controller="PartnersController">
+
         <div class="container">
 
             <!-- Partners Header -->
@@ -238,10 +239,14 @@
                 </div>
             </div>
 
-            <!-- Partners: Partners -->
-            <div class="row" ng-repeat="row in partners">
+        </div>
 
-                <div class="four columns" ng-repeat="partner in row">
+        <!-- Partners: Tier One Partners -->
+        <div id="tier-one-partners" class="container">
+
+            <div class="row" ng-repeat="row in tierOnePartners">
+
+                <div class="three columns" ng-repeat="partner in row">
                     <a href="{{partner.cells.url}}">
                         <img class="u-max-full-width" ng-src="{{partner.cells.logo}}" alt="{{partner.cells.name}}">
                     </a>
@@ -250,6 +255,22 @@
             </div>
 
         </div>
+
+        <!-- Partners: Tier Two Partners -->
+        <div id="tier-two-partners" class="container">
+
+            <div class="row" ng-repeat="row in tierTwoPartners">
+
+                <div class="two columns" ng-repeat="partner in row">
+                    <a href="{{partner.cells.url}}">
+                        <img class="u-max-full-width" ng-src="{{partner.cells.logo}}" alt="{{partner.cells.name}}">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
     <!-- Sponsors -->
