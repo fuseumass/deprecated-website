@@ -145,6 +145,40 @@
         </div>
     </section>
 
+    <!-- Prizes: Section -->
+    <section id="prizes" ng-controller="PrizesController">
+        <div class="container">
+
+            <!-- Prizes: Header -->
+            <div class="row">
+                <div class="u-full-width">
+                    <h1 ng-bind="header"></h1>
+                </div>
+            </div>
+
+            <!-- Prizes: Table -->
+            <div class="row">
+                <table class="u-full-width">
+                    <thead>
+                        <tr>
+                            <th>Prize</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="prize in prizes">
+                            <td ng-bind="prize.cells.name"></td>
+                            <td ng-bind="prize.cells.description"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </section>
+
+
     <!-- Schedule: Section -->
     <section id="schedule" ng-controller="ScheduleController">
         <div class="container">
@@ -152,7 +186,7 @@
             <!-- Schedule: Header -->
             <div class="row">
                 <div class="u-full-width">
-                    <h1>Schedule</h1>
+                    <h1 ng-bind="header"></h1>
                 </div>
             </div>
 

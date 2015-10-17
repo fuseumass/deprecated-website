@@ -161,6 +161,33 @@ a.social-media:hover {
     color: #d94b3f;
 }
 
+#prizes td {
+    padding: 12px;
+    color: #1a1a1a;
+}
+
+#prizes th {
+    padding: 12px;
+    color: #fff;
+    background-color: #d94b3f;
+}
+
+/* Bold prizes */
+#prizes table tbody tr > td:first-child {
+    color: #d94b3f;
+    font-weight: bold;
+}
+
+#prizes table tr:nth-child(even) {
+    background-color: #eee;
+    color: #1a1a1a;
+}
+
+#prizes table tr:nth-child(odd) {
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
 #schedule {
 
 }
@@ -193,7 +220,6 @@ a.social-media:hover {
     background-color: #d94b3f;
     color: #fff;
     font-weight: bold;
-
 }
 
 #partners {

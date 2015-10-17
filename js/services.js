@@ -31,6 +31,15 @@ services.service('FAQService', ['SpreadsheetService', function (SpreadsheetServi
 
 }]);
 
+services.service('PrizesService', ['SpreadsheetService', function (SpreadsheetService) {
+
+    this.getPrizes = function () {
+        var url = 'https://docs.google.com/spreadsheets/d/1dy25myiKq1hpeVgCc92KuIyGjSi_28Q8h3U1XpqgpkA/edit#gid=0';
+        return SpreadsheetService.getSpreadsheet(url);
+    };
+
+}]);
+
 services.service('ScheduleService', ['SpreadsheetService', function (SpreadsheetService) {
 
     this.getFridaySchedule = function () {

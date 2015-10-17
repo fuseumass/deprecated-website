@@ -23,6 +23,15 @@ controllers.controller('FAQController', ['$scope', '$sce', 'FAQService',
     }
 ]);
 
+controllers.controller('PrizesController', ['$scope', 'PrizesService',
+    function ($scope, PrizesService) {
+        $scope.header = 'Prizes';
+        PrizesService.getPrizes().then(function (data) {
+            $scope.prizes = data;
+        });
+    }
+]);
+
 controllers.controller('ScheduleController', ['$scope', 'ScheduleService',
     function ($scope, ScheduleService) {
         $scope.header = 'Schedule';
