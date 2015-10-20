@@ -23,10 +23,14 @@ controllers.controller('FAQController', ['$scope', '$sce', 'FAQService',
     }
 ]);
 
-controllers.controller('PrizesController', ['$scope', 'PrizesService',
-    function ($scope, PrizesService) {
+controllers.controller('PrizesController', ['$scope', '$sce', 'PrizesService',
+    function ($scope, $sce, PrizesService) {
         $scope.header = 'Prizes';
         PrizesService.getPrizes().then(function (data) {
+            _.map(data, function (row) {
+                row.cells.name = $sce.trustAsHtml(row.cells.name);
+                row.cells.description = $sce.trustAsHtml(row.cells.description);
+            });
             $scope.prizes = data;
         });
     }
