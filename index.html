@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="hackumass">
-<head>
+<html>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<head>
+<!-- Metadata
+----------------------------------------------->
   <meta charset="utf-8">
   <title>HackUMass</title>
 
@@ -14,385 +14,67 @@
   <meta property="og:description" content="HackUMass is Western Massachusetts' largest hackathon. Come join us!">
   <meta property="og:url" content="hackumass.com">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="/images/logo-thumbnail.png">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
-  <!-- css -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/hackumass.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Font
+------------------------------------------------>
+  <link href='//fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+<!-- Favicon
+-------------------------------------------------->
   <link rel="icon" href="images/favicon.ico">
 
-  <!-- js -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.0.0/dist/sheetrock.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.0/lodash.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-  <script src="js/ajaxchimp/jquery.ajaxchimp.min.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/directives.js"></script>
-  <script src="js/hackumass.js"></script>
+<!-- CSS
+------------------------------------------------>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
 
 </head>
+
 <body>
+  <header>
+    <div class="container">
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Embeded Logo (Animated SVG with PNG fallback) -->
+      <div class="row logo">
+        <div class="six columns offset-by-three">
+            <div class="embed">
+              <object type="image/svg+xml" data="images/logo.svg" class="u-max-full-width">
+                  <img class="u-max-full-width" ng-src="images/logo.png" alt="HackUMass Logo">
+              </object>
 
-  <!-- MLH Badge -->
-  <a id="mlh-trust-badge" style="position:fixed;top:0;right:50px;max-width:100px;width:10%;min-width: 60px;display:block;z-index:10000" href="https://mlh.io/?utm_campaign=Trust%20Badge" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/f2015.png" alt="MLH Official - Fall 2015" style="width:100%;" ></a>
-
-    <!-- Header -->
-    <section id="header">
-        <div class="container">
-
-            <!-- HackUMass Logo -->
-            <div class="row">
-                <div class="six columns offset-by-three">
-                    <div class="embed">
-                        <object class="u-max-full-width" data="images/logo.svg" type="image/svg+xml">
-                            <img class="u-max-full-width" ng-src="images/logo.png" alt="HackUMass Logo">
-                        </object>
-                    </div>
-                </div>
             </div>
-
-            <!-- HackUMass 2015 Video -->
-            <div class="row">
-                <div class="eight columns offset-by-two">
-                    <div class="embed">
-                        <iframe class="u-max-full-width" width="640" height="390" src="https://www.youtube.com/embed/6Fym38x9c8o" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sponsor Button -->
-            <div class="row">
-                <a class="button four columns offset-by-two" href="http://goo.gl/forms/f26NxZp7Oj">
-                Apply
-                </a>
-                <a class="button four columns" href="#sponsors">
-                Sponsor
-                </a>
-            </div>
-
         </div>
+      </div>
+
+<!-- Advertised Timeframe -->
+      <div class="row">
+        <div class="one-half columns">
+          <p class="date">Fall 2016</p>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+<!-- Footer with additional info. -->
+  <footer>
+    <section>
+      <div class="container">
+      <div class="row">
+          <div class="u-max-full-width one-half columns">
+            <div class=footer-text>
+                Have any questions for us?<br>
+                Reach out to us at <a style="color: #CF3A24;"  href="mailto:hackumass@gmail.com">hackumass@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </section>
+  </footer>
 
-    <!-- What: Section -->
-    <section id="what" ng-controller="WhatController">
-        <div class="container">
-
-            <!-- Register Header -->
-            <div class="row">
-                <div class="u-full-width">
-                    <h1 ng-bind="header"></h1>
-                    <p ng-bind="description"></p>
-                </div>
-            </div>
-
-            <!-- What: Date -->
-            <div class="row">
-                <div class="u-full-width">
-                    <time datetime="2015-10-23 22:00:00">
-                        <h4 ng-bind="date"></h4>
-                    </time>
-                </div>
-            </div>
-
-            <!-- What: Countdown -->
-            <div class="row">
-                <div class="u-full-width">
-                    <countdown></countdown>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- FAQ: Section -->
-    <section id="faq" ng-controller="FAQController">
-        <div class="container">
-
-            <!-- FAQ: Header -->
-            <div class="row">
-                <div class="u-full-width">
-                    <h1 ng-bind="header"></h1>
-                </div>
-            </div>
-
-            <!-- FAQ: Questions and Answers -->
-            <div class="row" ng-repeat="row in FAQ">
-                <div class="one-third column" ng-repeat="questionAndAnswer in row">
-                    <h4 ng-bind-html="questionAndAnswer.cells.question"></h4>
-                    <p ng-bind-html="questionAndAnswer.cells.answer"></p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Prizes: Section -->
-    <section id="prizes" ng-controller="PrizesController">
-        <div class="container">
-
-            <!-- Prizes: Header -->
-            <div class="row">
-                <div class="u-full-width">
-                    <h1 ng-bind="header"></h1>
-                </div>
-            </div>
-
-            <!-- Prizes: Table -->
-            <div class="row">
-                <table class="u-full-width">
-                    <thead>
-                        <tr>
-                            <th>Prize</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr ng-repeat="prize in prizes">
-                            <td ng-bind-html="prize.cells.name"></td>
-                            <td ng-bind-html="prize.cells.description"></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Schedule: Section -->
-    <section id="schedule" ng-controller="ScheduleController">
-        <div class="container">
-
-            <!-- Schedule: Header -->
-            <div class="row">
-                <div class="u-full-width">
-                    <h1 ng-bind="header"></h1>
-                </div>
-            </div>
-
-            <!-- Schedule: Table -->
-            <div class="row">
-
-                <table class="u-full-width">
-                    <tbody>
-                        <tr>
-                            <td colspan="2" ng-bind="fridaySchedule.day"></td>
-                        </tr>
-                        <tr ng-repeat="event in fridaySchedule.events">
-                            <td ng-bind="event.cells.time"></td>
-                            <td ng-bind="event.cells.description"></td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td colspan="2" ng-bind="saturdaySchedule.day"></td>
-                        </tr>
-                        <tr ng-repeat="event in saturdaySchedule.events">
-                            <td ng-bind="event.cells.time"></td>
-                            <td ng-bind="event.cells.description"></td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td colspan="2" ng-bind="sundaySchedule.day"></td>
-                        </tr>
-                        <tr ng-repeat="event in sundaySchedule.events">
-                            <td ng-bind="event.cells.time"></td>
-                            <td ng-bind="event.cells.description"></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Partners -->
-    <section id="partners" ng-controller="PartnersController">
-
-        <div class="container">
-
-            <!-- Partners Header -->
-            <div class="row">
-                <div class="u-full-width">
-                    <h1>Partners</h1>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Partners: Tier One Partners -->
-        <div id="tier-one-partners" class="container">
-
-            <div class="row" ng-repeat="row in tierOnePartners">
-
-                <div class="three columns" ng-repeat="partner in row">
-                    <a href="{{partner.cells.url}}">
-                        <img class="u-max-full-width" ng-src="{{partner.cells.logo}}" alt="{{partner.cells.name}}">
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Partners: Tier Two Partners -->
-        <div id="tier-two-partners" class="container">
-
-            <div class="row" ng-repeat="row in tierTwoPartners">
-
-                <div class="two columns" ng-repeat="partner in row">
-                    <a href="{{partner.cells.url}}">
-                        <img class="u-max-full-width" ng-src="{{partner.cells.logo}}" alt="{{partner.cells.name}}">
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Sponsors -->
-    <section id="sponsors" ng-controller="SponsorsController">
-        <div class="container">
-
-            <!-- Sponsors Header -->
-            <div class="row">
-                <div class="u-full-width">
-                    <h1>Sponsors</h1>
-                </div>
-            </div>
-
-            <!-- Sponsors email -->
-            <div class="row">
-                <div class="u-full-width">
-                    <p>Interested in becoming a sponsor? Email us at <a href="mailto:sponsors@hackumass.com">sponsors@hackumass.com</a>.</p>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Sponsors: Zetta Sponsors -->
-        <div id="zetta-sponsorship-tier" class="container">
-
-            <div class="row" ng-repeat="row in zettaSponsors">
-
-                <div class="u-full-width" ng-repeat="sponsor in row">
-                    <a href="{{sponsor.cells.url}}">
-                        <img class="u-max-full-width" ng-src="{{sponsor.cells.logo}}" alt="{{sponsor.cells.name}}">
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Sponsors: Tera Sponsors -->
-        <div id="tera-sponsorship-tier" class="container">
-
-            <div class="row" ng-repeat="row in teraSponsors">
-
-                <div class="six columns" ng-repeat="sponsor in row">
-                    <a href="{{sponsor.cells.url}}">
-                        <img class="u-max-full-width" ng-src="{{sponsor.cells.logo}}" alt="{{sponsor.cells.name}}">
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Sponsors: Giga Sponsors -->
-        <div id="giga-sponsorship-tier" class="container">
-
-            <div class="row" ng-repeat="row in gigaSponsors">
-
-                <div class="four columns" ng-repeat="sponsor in row">
-                    <a href="{{sponsor.cells.url}}">
-                        <img class="u-max-full-width" ng-src="{{sponsor.cells.logo}}" alt="{{sponsor.cells.name}}">
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Sponsors: Mega Sponsors -->
-        <div id="mega-sponsorship-tier" class="container">
-
-            <div class="row" ng-repeat="row in megaSponsors">
-
-                <div class="three columns" ng-repeat="sponsor in row">
-                    <a href="{{sponsor.cells.url}}">
-                        <img class="u-max-full-width" ng-src="{{sponsor.cells.logo}}" alt="{{sponsor.cells.name}}">
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Footer -->
-    <section id="footer" ng-controller="FooterController">
-        <div class="container">
-
-            <!-- Footer Social Media -->
-            <div class="row">
-
-                <!-- Social Media Icons -->
-                <div class="u-full-width">
-                    <h1>
-                        <a class="social-media" href="https://www.facebook.com/hackUMass"><i class="fa fa-facebook"></i></a>
-                        <a class="social-media" href="https://twitter.com/hackumass"><i class="fa fa-twitter"></i></a>
-                        <a class="social-media" href="https://www.youtube.com/channel/UCSxB8SNRDgTb6WtAgJUYthg"><i class="fa fa-youtube"></i></a>
-                        <a class="social-media" href="https://plus.google.com/108473055507651283001/posts"><i class="fa fa-google"></i></a>
-                    </h1>
-                </div>
-
-            </div>
-
-            <!-- Footer: Helpful Links -->
-            <div class="row" ng-repeat="link in links">
-                <div class="u-full-width">
-                    <a href="{{link.cells.url}}" ng-bind="link.cells.text"></a>
-                </div>
-            </div>
-
-            <!-- Footer Content -->
-            <div class="row">
-                <div class="u-full-width">
-                    <p>Made with <i class="fa fa-heart fa-pulse heart"></i> by the <a href="mailto:team@hackumass.com">HackUMass team</a>.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
