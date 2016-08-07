@@ -1078,7 +1078,7 @@ footer .social-footer li:hover a {
 		background: #00a8ff;
 	}
 	.pricings .pricing .box-main.active {
-		background: #00a8ff;
+		background: ##CF3A24;
 		-webkit-transform: translateX(0%);
 		-ms-transform: translateX(0%);
 		transform: translateX(0%);
