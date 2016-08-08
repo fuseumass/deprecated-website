@@ -1,85 +1,511 @@
 <!DOCTYPE html>
-<html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HUM4</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap and Font Awesome css-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <!-- Google fonts-->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Pacifico">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700">
-    <!-- Theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="img/bg.png">
-    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-  </head>
-  <body>
-    <div style="background-image: url('img/bg.png')" class="main"> 
-      <div class="overlay"></div>
-      <div class="container">
-        <p class="social"><a href="https://www.facebook.com/hackUMass" title="" class="facebook"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/HackUMass" title="" class="twitter"><i class="fa fa-twitter"></i></a><a href="https://www.instagram.com/hackumass/" title="" class="instagram"><i class="fa fa-instagram"></i></a></p>
-        <div class="row">
-          <div class="col-sm-12">
-            <h1 class="cursive">HackUMass 4</h1>
-            <h2 class="sub">Sign Up Opens in: </h2>
-          </div>
-        </div>
-        <!-- countdown-->
-        <div id="countdown" class="countdown">
-          <div class="row">
-            <div class="countdown-item col-sm-3 col-xs-6">
-              <div id="countdown-days" class="countdown-number">0</div>
-              <div class="countdown-label">days</div>
-            </div>
-            <div class="countdown-item col-sm-3 col-xs-6">
-              <div id="countdown-hours" class="countdown-number">0</div>
-              <div class="countdown-label">hours</div>
-            </div>
-            <div class="countdown-item col-sm-3 col-xs-6">
-              <div id="countdown-minutes" class="countdown-number">0</div>
-              <div class="countdown-label">minutes</div>
-            </div>
-            <div class="countdown-item col-sm-3 col-xs-6">
-              <div id="countdown-seconds" class="countdown-number">0</div>
-              <div class="countdown-label">seconds</div>
-            </div>
-          </div>
-        </div>
-        <!-- /.countdown-->
-        
-      </div>
-      <div class="footer">
-        <div class="container">
-          <div class="row">
-            <center>
-            <a  style="background-color:#2B689C;border-color:#2B689C" href="https://hackumass.typeform.com/to/BnUow7" class="btn btn-info btn-lg" role="button">REGISTER</a>
-            </center>
+<html lang="en">
 
-            <div class="col-md-6">
-                <h3><a href="HUM4/index.html" style="color: #4A90E2;" >Go to site</a></h3>
-            </div>
-           
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- JAVASCRIPT FILES -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="js/jquery.cookie.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/front.js"></script>
-  
+<head>
+	<title>Hack UMass lV</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="UMass, Amherst, Massachusetts, Hackathon">
+ 	<meta name="description" content="HackUMass is Western Massachusetts' largest hackathon. Come join us!">
+  	<meta property="og:title" content="HackUMass">
+  	<meta property="og:description" content="HackUMass is Western Massachusetts' largest hackathon. Come join us!">
+  	<meta property="og:url" content="hackumass.com">
+  	<meta property="og:type" content="website">
+	<!-- Favicons (created with http://realfavicongenerator.net/)-->
+	
+	<link rel="shortcut icon" href="img/favicons/favicon.ico">
+	
+	<!-- Normalize -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- Owl -->
+	<link rel="stylesheet" type="text/css" href="css/owl.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">
+	<!-- Elegant Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
+	<!-- Main style -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+	<div class="preloader">
+		<img src="img/loader.gif" alt="Preloader image">
+	</div>
+	<header id="intro">
+		<div class="container">
+			<div class="table">
+				<div class="header-text">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<!-- Start Embeded Logo (Animated SVG with PNG fallback) -->
+							<center>
+								<object type="image/svg+xml" data="img/logo.svg" class="img-responsive">
+		                  			<img class="img-responsive" ng-src="img/logo.png" alt="HackUMass Logo">
+		              			</object>
+		              		</center>
+              				<!-- End Embeded Logo (Animazted SVG with PNG fallback) -->
+							<h2 class="white typed">The largest hackathon in Pioneer Valley.</h2>
+							<span class="typed-cursor">|</span>
+							<h3>October 7-9th @ University of Massachusetts Amherst</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="cut cut-top"></div>
+		<div class="container">
+			<div class="row intro-tables">
+				<div class="col-md-4">
+					<div class="intro-table intro-table-first">
+						<h4 class="white heading">Schedule</h4>
+						<div class="owl-carousel owl-schedule bottom">
+							<div class="item">
+								<div class="schedule-row row">
+									<div class="col-xs-6">
+										<h5 class="regular white">TBA</h5>
+									</div>
+									<div class="col-xs-6 text-right">
+										<h5 class="white">8:30 - 10:00</h5>
+									</div>
+								</div>
+								<div class="schedule-row row">
+									<div class="col-xs-6">
+										<h5 class="regular white">TBA</h5>
+									</div>
+									<div class="col-xs-6 text-right">
+										<h5 class="white">8:30 - 10:00</h5>
+									</div>
+								</div>
+								<div class="schedule-row row">
+									<div class="col-xs-6">
+										<h5 class="regular white">TBA</h5>
+									</div>
+									<div class="col-xs-6 text-right">
+										<h5 class="white">8:30 - 10:00</h5>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="schedule-row row">
+									<div class="col-xs-6">
+										<h5 class="regular white">TBA</h5>
+									</div>
+									<div class="col-xs-6 text-right">
+										<h5 class="white">8:30 - 10:00</h5>
+									</div>
+								</div>
+								<div class="schedule-row row">
+									<div class="col-xs-6">
+										<h5 class="regular white">TBA</h5>
+									</div>
+									<div class="col-xs-6 text-right">
+										<h5 class="white">8:30 - 10:00</h5>
+									</div>
+								</div>
+								<div class="schedule-row row">
+									<div class="col-xs-6">
+										<h5 class="regular white">TBA</h5>
+									</div>
+									<div class="col-xs-6 text-right">
+										<h5 class="white">8:30 - 10:00</h5>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="schedule-row row">
+									<div class="col-xs-6">
+										<h5 class="regular white">TBA</h5>
+									</div>
+									<div class="col-xs-6 text-right">
+										<h5 class="white">8:30 - 10:00</h5>
+									</div>
+								</div>
+								<div class="schedule-row row">
+									<div class="col-xs-6">
+										<h5 class="regular white">TBA</h5>
+									</div>
+									<div class="col-xs-6 text-right">
+										<h5 class="white">8:30 - 10:00</h5>
+									</div>
+								</div>
+								<div class="schedule-row row">
+									<div class="col-xs-6">
+										<h5 class="regular white">TBA</h5>
+									</div>
+									<div class="col-xs-6 text-right">
+										<h5 class="white">8:30 - 10:00</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="intro-table intro-table-hover">
+						<h3 class="white heading hide-hover">October 7th - 9th</h3>
+						<div class="bottom">
+							<!-- h4 class="white heading small-heading no-margin regular">Register Today</h4> -->
+							<h4 class="white heading small-pt">Register Now!</h4>
+							<a href="https://hackumass.typeform.com/to/BnUow7" class="btn btn-white-fill expand">Register</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="intro-table intro-table-third">
+						<h4 class="white heading">Latest News</h4>
+						<div class="owl-testimonials bottom">
+							<div class="item">
+								<h4 class="white heading content">Hack UMass released a new video. Watch it <a href="https://www.youtube.com/watch?v=Y5It_t59PVM">here</a></h4>
+								<h5 class="white heading light author">Updated June 4</h5>
+							</div>
+							<!-- <div class="item">
+								<h4 class="white heading content">DUMMY</h4>
+								<h5 class="white heading light author">Greg Pardon</h5>
+							</div>
+							<div class="item">
+								<h4 class="white heading content">DUMMY</h4>
+								<h5 class="white heading light author">Christina Goldman</h5>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+				<center><h2 style="top:-90px">What is Happening?</h2></center>
+				<div class="col-lg-8 col-md-12 col-lg-offset-2" style="top:-90px;margin-bottom: 0px;">
+					<div class="embed-responsive embed-responsive-16by9">
+					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6Fym38x9c8o" allowfullscreen></iframe>
+					</div>
+				</div>
+			
+
+			
    
-  </body>
+			</div>
+		</div>
+	</section>
+	<section id="pricing" class="section gray-bg">
+		<div class="container">
+			<div class="row title text-center">
+				<h2 class="margin-top white">Why Hack UMass lV?</h2>
+				<h4 class="light white">What makes us different from all other hackathons</h4>
+			</div>
+			<div class="row no-margin">
+				<div class="col-md-7 no-padding col-md-offset-5 pricings text-center">
+					<div class="pricing">
+						<div class="box-main active" data-img="img/pricing1.jpg">
+							<h4 class="white">Few Things about HackUMasslV</h4>
+							<a href="https://hackumass.typeform.com/to/BnUow7" class="btn btn-white-fill">Register Now!</a>
+						</div>
+						<div class="box-second active">
+							<ul class="white-list text-left">
+								<li>600+ Hackers</li>
+								<li>State of the art 3D printers</li>
+								<li>30+ Hardware Hacks</li>
+								<li>#1 Dining in the US</li>
+								<li>Lots of free swag</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="services" class="section section-padded">
+		<div class="container">
+			<div class="row text-center title">
+				<h2>FAQ</h2>
+				<h4 class="light muted">You had questions, here we answer them.</h4>
+			</div>
+			<div class="row services" style="margin:0px;">
+				<div class="col-md-4">
+					<div class="service">
+						<div class="icon-holder">
+							<img src="img/icons/location.png" alt="" class="icon">
+						</div>
+						<h4 class="heading">Where is it?</h4>
+						<p class="description">HackUMass 2016 will take place at the Integrative Learning Center, the newest venue on campus, with robust WiFi and ample space.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service">
+						<div class="icon-holder">
+							<img src="img/icons/who.png" alt="" class="icon">
+						</div>
+						<h4 class="heading">Who's coming?</h4>
+						<p class="description">We expect over 600 hackers from across the US to attend our Hackathon, with most attendees arriving from Boston, Worcester, New York City, and more.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service">
+						<div class="icon-holder">
+							<img src="img/icons/Apply.png" alt="" class="icon">
+						</div>
+						<h4 class="heading">Who can attend?</h4>
+						<p class="description">All students are welcome. If you're under 18, we will need you to bring a signed parental consent form.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row services" style="margin-top:0px;">
+				<div class="col-md-4">
+					<div class="service">
+						<div class="icon-holder">
+							<img src="img/icons/experience.png" alt="" class="icon">
+						</div>
+						<h4 class="heading">Do I need experience?</h4>
+						<p class="description">We will have an entire area in the arena dedicated to beginners with plenty of mentors and resources, so don't worry about not knowing enough beforehand.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service">
+						<div class="icon-holder">
+							<img src="img/icons/team.png" alt="" class="icon">
+						</div>
+						<h4 class="heading">Should I be in a team?</h4>
+						<p class="description">We encourage everybody to work in a team of up to 4 people. There will be plenty of opportunities to form your team online and at the event.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service">
+						<div class="icon-holder">
+							<img src="img/icons/reim.png" alt="" class="icon">
+						</div>
+						<h4 class="heading">Will you be providing travel reimbursements?</h4>
+						<p class="description">Yes, on a limited basis. Email us at team@hackumass.com for more information.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row services" style="margin:0px;">
+				<div class="col-md-4">
+					<div class="service">
+						<div class="icon-holder">
+							<img src="img/icons/free.png" alt="" class="icon">
+						</div>
+						<h4 class="heading">How much does it cost to attend?</h4>
+						<p class="description">HackUMass is a completely free event to attend. Nap rooms, food, and swag are on us!</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service">
+						<div class="icon-holder">
+							<img src="img/icons/404.png" alt="" class="icon">
+						</div>
+						<h4 class="heading">Can I start my project before the event?</h4>
+						<p class="description">No, you may not start your project beforehand. All of the work related to the projected must be done during the event.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service">
+						<div class="icon-holder">
+							<img src="img/icons/code1.png" alt="" class="icon">
+						</div>
+						<h4 class="heading">Is there a Code of Conduct we need to abide by?</h4>
+						<p class="description">Be smart about your actions. As a MLH event, we enforce the <a style ="color:#000000" href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a> at our event.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cut cut-bottom"></div>
+	</section>
+	<section id="team" class="section gray-bg">
+		<div class="container">
+			<div class="row title text-center">
+				<h2 class="margin-top">Sponsors</h2>
+				<hr>
+			</div>
+			
+
+			<div class="row centered">
+				<div class="col-lg-2 col-md-3 col-xs-4 pt">
+					<img class="img-responsive" src="img/Logos/Sponsors/fblogo.png" alt="">
+				</div>
+				<div class="col-lg-2 col-md-3 col-xs-4 pt">
+					<img class="img-responsive" src="img/Logos/Sponsors/xmission.png" alt=""
+					style="margin-top:10%">
+				</div>
+				<div class="col-lg-2 col-md-3 col-xs-4 pt">
+					<img class="img-responsive" src="img/Logos/Sponsors/figma.png" alt="">
+				</div>
+				<div class="col-lg-2 col-md-3 col-xs-4 pt">
+					<img class="img-responsive" src="img/Logos/Sponsors/kloudless.png" alt="">
+				</div>
+				<div class="col-lg-2 col-md-3 col-xs-4 pt">
+					<img class="img-responsive" src="img/Logos/Sponsors/stickermule-logo.png" >
+				</div>
+				<div class="col-lg-2 col-md-3 col-xs-4 pt">
+					<img class="img-responsive" src="img/Logos/Sponsors/google.png" >
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row-centered">
+				<div class="col-lg-2 col-md-3 col-xs-4 pt">
+					<img class="img-responsive" src="img/Logos/Sponsors/mapr.png" alt=""
+					style="margin-top:0%">
+				</div>
+				<div class="col-lg-2 col-md-3 col-xs-4 pt">
+					<img class="img-responsive" src="img/Logos/Partners/autodesk.png" alt="" 
+					style="margin-top:30%">
+				</div>
+				<div class="col-lg-2 col-md-3 col-xs-4 pt">
+					<img class="img-responsive" src="img/Logos/Sponsors/jet.png" alt=""
+					style="height:50%;width:50%;margin-left:20%;margin-top:10%">
+				</div>
+				<div class="col-lg-2 col-md-3 col-xs-4 pt">
+					<img class="img-responsive" src="img/Logos/Sponsors/tito.svg" alt=""
+					style="margin-top:20px;height:80%;width:80%">
+				</div>
+				<div class="col-lg-2 col-md-3 col-xs-4 pt">
+					<img class="img-responsive" src="img/Logos/Partners/WearHacks.png" alt=""
+					style="height:65%;width:65%;margin-left:15%;";>
+				</div>
+				<div class="col-lg-2 col-md-3 col-xs-4 pt">
+					<img class="img-responsive" src="img/Logos/Sponsors/optum.png" alt=""
+					style="margin-top:20px">
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-3 pt">
+					<img class="img-responsive" src="img/Logos/Sponsors/Fitbit.png" alt=""
+					style="">
+				</div>
+				<div class="col-lg-3 pt">
+					<img class="img-responsive" src="img/Logos/Sponsors/Standard-Logo.gif" alt=""
+					style="">
+				</div>
+				<div class="col-lg-3 pt">
+					<img class="img-responsive" src="img/Logos/Sponsors/SmarterTravel.png" alt=""
+					style="">
+				</div>
+				<div class="col-lg-3 pt">
+					<img class="img-responsive" src="img/Logos/Sponsors/robin.png" alt=""
+					style="margin-top:-10%">
+				</div>
+			</div>
+		</div>
+
+
+		<br>
+		<br>
+
+		<div class="row title text-center">
+			<h4 class="light muted">University Partners</h4>
+			<hr>
+		</div>
+
+		<div class="container" style="margin-top:3%">
+			<div class="row centered">
+				<div class="col-lg-4 pt">
+					<center>
+					<img class="img-responsive" src="img/Logos/Partners/cicsedit.png" alt="" >
+					</center>
+				</div>
+				<div class="col-lg-4 pt">
+					<center>
+					<img class="img-responsive" src="img/Logos/Partners/college-of-engineering.png"style="height:80%;width:80%"alt="">
+					</center>
+				</div>
+				<div class="col-lg-4 pt">
+					<img class="img-responsive" src="img/Logos/Partners/isomedi.png" alt="">
+				</div>
+				<!-- <div class="col-lg-4 pt">
+					<img class="img-responsive" src="img/Logos/Sponsors/akamai.png" alt=""
+					style="">
+				</div> -->
+			</div>
+
+		
+
+		<br>
+		<br>
+		<!-- <div class="row title text-center">
+				<h4 class="light muted">Company Partners</h4>
+				<hr>
+			</div>
+ -->
+		
+
+		
+
+		</div>
+		
+	</section>
+	
+	<section class="section section-padded blue-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="owl-twitter owl-carousel">
+						<div class="item text-center">
+							<i class="icon fa fa-twitter"></i>
+							<h4 class="white light">Get hyyyped for HackUMass! Shout out to Eric Grigoryan and Nigel Paine for putting together this dope promo!</h4>
+							<h4 class="light-white light">#HackUmass #Fall2016 </h4>
+						</div>
+						<div class="item text-center">
+							<i class="icon fa fa-twitter"></i>
+							<h4 class="white light">Follow @HackUMass on Instagram, we've posted some new content on there!</h4>
+							<h4 class="light-white light">#IG </h4>
+						</div>
+						<div class="item text-center">
+							<i class="icon fa fa-twitter"></i>
+							<h4 class="white light">HackUmass IV will be held on October 7-9th 2016 and 600 people can participate this year!</h4>
+							<h4 class="light-white light">#HackUmass #Fall2016</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				
+		<center><h2 style="color:#FFFFFF">Questions? Let us know! <br> sponsors@hackumass.com | team@hackumass.com </h2></center>
+				
+			<div class="row bottom-footer text-center-mobile">
+				<div class="col-sm-8">
+					<h4 style="color:#FFFFFF">Made with &#x2764 by the HackUMass Team</h4>
+				</div>
+				<div class="col-sm-4 text-right text-center-mobile">
+					<ul class="social-footer">
+						<li><a href="https://www.facebook.com/hackUMass/?fref=ts&em=1"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/hackumass"><i class="fa fa-twitter"></i></a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Holder for mobile navigation -->
+	<div class="mobile-nav">
+		<ul>
+		</ul>
+		<a href="#" class="close-link"><i class="arrow_up"></i></a>
+	</div>
+	<!-- Scripts -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/typewriter.js"></script>
+	<script src="js/jquery.onepagenav.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
 </html>
