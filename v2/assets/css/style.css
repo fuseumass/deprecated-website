@@ -26,3 +26,16 @@
 .p {
   font-size: 30px;
 }
+
+.primary-color{
+  color: #E70F47;
+}
+
+.humv-video{
+  background:#000;
+  webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  margin:0 auto;
+  overflow:hidden;
+}
