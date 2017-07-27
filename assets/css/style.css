@@ -20,7 +20,7 @@
     margin: 30px 0 100px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
-
+  
 }
 
 .p {
@@ -38,4 +38,15 @@
   border-radius: 20px;
   margin:0 auto;
   overflow:hidden;
+}
+
+#mlh-trust-badge{
+  display:block;
+  max-width: 120px;
+  min-width: 80px;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  width: 10%;
+  z-index: 10000;
 }
