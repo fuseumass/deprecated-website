@@ -18,17 +18,17 @@
 }
 
 /* Rotation animation (webkit) */
-@-webkit-keyframes hackumass-logo-rotate {
+/* @-webkit-keyframes hackumass-logo-rotate {
     from {
         -webkit-transform: rotate(0);
     }
     to {
         -webkit-transform: rotate(360deg);
     }
-}
+} */
 
 /* Rotation animation (moz) */
-@-moz-keyframes hackumass-logo-rotate {
+/* @-moz-keyframes hackumass-logo-rotate {
     from {
         -webkit-transform: rotate(0);
     }
@@ -36,10 +36,10 @@
     to {
         -webkit-transform: rotate(360deg);
     }
-}
+} */
 
 /* Rotation animation (keyframes) */
-@keyframes hackumass-logo-rotate {
+/* @keyframes hackumass-logo-rotate {
     from {
         transform: rotate(0);
     }
@@ -47,4 +47,4 @@
     to {
         transform: rotate(360deg);
     }
-}
+} */
