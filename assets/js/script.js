@@ -1,7 +1,10 @@
 'use strict';
 
-if (location.protocol != 'https:' && location.protocol != 'file:'){
-  location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+// Redirect to secure version of the website
+if (location.protocol != 'https:'){
+  if (location.protocol != 'file:'){
+    location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+  }
 }
 
 $(function() {
