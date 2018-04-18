@@ -1,5 +1,9 @@
 'use strict';
 
+if (location.protocol != 'https:' && location.protocol != 'file:'){
+  location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}
+
 $(function() {
 
 
@@ -12,7 +16,7 @@ $(function() {
   | Read their complete description and modify them based on your need.
   |
   */
- 
+
   thesaas.config({
 
     /*
@@ -50,7 +54,7 @@ $(function() {
     | visitor a better experience for scrolling.
     |
     */
-   
+
     smoothScroll: true
 
   });
@@ -69,7 +73,7 @@ $(function() {
   | them in this file.
   |
   */
- 
+
 
 
 
