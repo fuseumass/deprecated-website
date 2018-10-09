@@ -47,14 +47,41 @@ xhr.open('GET', "https://dashboard.hackumass.com/events.json", true);
 xhr.send();
 xhr.onreadystatechange = processRequest;
 
+function formatDate(date) {
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var ampm = hours >= 12 ? 'pm' : 'am';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0'+minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    return date.getMonth()+1 + "/" + date.getDate() + "/" + date.getFullYear() + "  " + strTime;
+  }
+
 function processRequest(e) {
     if (xhr.readyState == 4 && xhr.status == 200) {
-        console.log(JSON.parse(xhr.responseText));
+        data = JSON.parse(xhr.responseText);
+        
+        // Step one, remove the data we don't care about
+        for(var i=0; i < data.length; i++){
+            delete data[i]["created_by"];
+            delete data[i]["created_at"];
+            delete data[i]["updated_at"];
+            delete data[i]["url"];
+            delete data[i]["id"];
+            date1 = new Date(data[i]["start_time"]);
+            // date1.setHours(date1.getHours() - 4);
+            date1 = formatDate(date1);
+            data[i]["start_time"] = date1.toString();
+            date2 = new Date(data[i]["end_time"]);
+            // date2.setHours(date2.getHours() - 4)
+            date2 = formatDate(date2);
+            data[i]["end_time"] = date2.toString();
+        }
+
+        document.body.appendChild(buildHtmlTable(data));
+    } else if  (xhr.status == 404 || xhr.status == 500 ) {
+        console.log('Shit... The request failed...')
     }
 }
 
-document.body.appendChild(buildHtmlTable([
-    {"name" : "abc", "age" : 50},
-    {"age" : "25", "hobby" : "swimming"},
-    {"name" : "xyz", "hobby" : "programming"}
-]));
