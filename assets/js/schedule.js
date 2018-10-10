@@ -3,6 +3,8 @@ var _table_ = document.createElement('table'),
     _th_ = document.createElement('th'),
     _td_ = document.createElement('td');
 
+_table_.classList.add("table-striped");
+
 // Builds the HTML Table out of myList json data from Ivy restful service.
  function buildHtmlTable(arr) {
      var table = _table_.cloneNode(false),
@@ -19,7 +21,7 @@ var _table_ = document.createElement('table'),
      }
      return table;
  }
- 
+
  // Adds a header row to the table and returns the set of columns.
  // Need to do union of keys from all records as some records may not contain
  // all records
@@ -61,7 +63,6 @@ function formatDate(date) {
 function processRequest(e) {
     if (xhr.readyState == 4 && xhr.status == 200) {
         data = JSON.parse(xhr.responseText);
-        
         // Step one, remove the data we don't care about
         for(var i=0; i < data.length; i++){
             delete data[i]["created_by"];
@@ -69,19 +70,37 @@ function processRequest(e) {
             delete data[i]["updated_at"];
             delete data[i]["url"];
             delete data[i]["id"];
-            date1 = new Date(data[i]["start_time"]);
-            // date1.setHours(date1.getHours() - 4);
-            date1 = formatDate(date1);
-            data[i]["start_time"] = date1.toString();
-            date2 = new Date(data[i]["end_time"]);
-            // date2.setHours(date2.getHours() - 4)
-            date2 = formatDate(date2);
-            data[i]["end_time"] = date2.toString();
-        }
 
-        document.body.appendChild(buildHtmlTable(data));
+            data[i]['Title'] = data[i]['title']
+            delete data[i]['title']
+
+            data[i]['Description'] = data[i]['description']
+            delete data[i]['description']
+
+            data[i]['Location'] = data[i]['location']
+            delete data[i]['location']
+
+            data[i]['Start Time'] = data[i]['start_time']
+            delete data[i]['start_time']
+
+            data[i]['End Time'] = data[i]['end_time']
+            delete data[i]['end_time']
+
+            data[i]['Hosted By'] = data[i]['host']
+            delete data[i]['host']
+
+
+
+            date1 = new Date(data[i]["Start Time"]);
+            date1 = formatDate(date1);
+            data[i]["Start Time"] = date1.toString();
+            date2 = new Date(data[i]["End Time"]);
+            date2 = formatDate(date2);
+            data[i]["End Time"] = date2.toString();
+        }
+        console.log(data)
+        document.getElementById('main').appendChild(buildHtmlTable(data));
     } else if  (xhr.status == 404 || xhr.status == 500 ) {
         console.log('Shit... The request failed...')
     }
 }
-
