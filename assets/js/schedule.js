@@ -1,9 +1,16 @@
+//Hey there! What are you doing here????
+//This is the HackUMass public facing schedule which is written in the shittiest javascript ever!
+// We literally put this page together in 30 minutes at 3AM so please don't judge.
+//Love,
+//Ishan
+
+
 var _table_ = document.createElement('table'),
     _tr_ = document.createElement('tr'),
     _th_ = document.createElement('th'),
     _td_ = document.createElement('td');
 
-_table_.classList.add("table-striped");
+_table_.classList.add("table");
 
 // Builds the HTML Table out of myList json data from Ivy restful service.
  function buildHtmlTable(arr) {
@@ -65,32 +72,31 @@ function processRequest(e) {
         data = JSON.parse(xhr.responseText);
         // Step one, remove the data we don't care about
         for(var i=0; i < data.length; i++){
+            //Delete all the fields we don't need
             delete data[i]["created_by"];
             delete data[i]["created_at"];
             delete data[i]["updated_at"];
             delete data[i]["url"];
             delete data[i]["id"];
+            delete data[i]['host'];
 
+            //Rename the keys so that they are nicer
             data[i]['Title'] = data[i]['title']
             delete data[i]['title']
-
             data[i]['Description'] = data[i]['description']
             delete data[i]['description']
-
             data[i]['Location'] = data[i]['location']
             delete data[i]['location']
-
             data[i]['Start Time'] = data[i]['start_time']
             delete data[i]['start_time']
-
             data[i]['End Time'] = data[i]['end_time']
             delete data[i]['end_time']
 
-            data[i]['Hosted By'] = data[i]['host']
-            delete data[i]['host']
+            //NOTE: Start Time and End Time keys are a bit funny lol. Keys are
+            //not supposed to have spaces so I just put the unicode for spaces
+            //in between the two words lol. Sorry...
 
-
-
+            //Format our start time and end time with shitty js
             date1 = new Date(data[i]["Start Time"]);
             date1 = formatDate(date1);
             data[i]["Start Time"] = date1.toString();
@@ -98,7 +104,6 @@ function processRequest(e) {
             date2 = formatDate(date2);
             data[i]["End Time"] = date2.toString();
         }
-        console.log(data)
         document.getElementById('main').appendChild(buildHtmlTable(data));
     } else if  (xhr.status == 404 || xhr.status == 500 ) {
         console.log('Shit... The request failed...')
