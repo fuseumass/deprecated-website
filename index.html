@@ -13,7 +13,50 @@
   <link href="assets/css/core.min.css" rel="stylesheet">
   <link href="assets/css/thesaas.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -1;
+        box-sizing: border-box;
+        opacity: 0.6;
+    }
 
+    .section {
+      position: relative;
+      background-color: rgba(255,255,255,0.75);
+    }
+    
+    video.bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        max-width: unset;
+        
+    }
+    
+    @media (min-aspect-ratio: 16/9) {
+        .bg-video {
+            height: 300%;
+            top: -100%;
+        }
+    }
+    
+    @media (max-aspect-ratio: 16/9) {
+        .bg-video {
+            width: 300%;
+            left: -100%;
+        }
+    }
+    
+  </style>
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="icon" href="assets/img/favicon.png">
@@ -41,15 +84,24 @@
   <!-- END Topbar -->
 
   <!-- Header -->
-  <header class="header header-inverse h-fullscreen p-0 bg-primary overflow-hidden" style="background-image: linear-gradient(-45deg, #f7a6be 0%, #efaec1 100%);">
-    <canvas class="constellation"></canvas>
+  <header class="header header-inverse h-fullscreen p-0 bg-primary overflow-hidden" style="background-image: linear-gradient(-45deg, rgba(60, 60, 60, 1) 0%, rgba(60, 60, 60, 1) 100%);">
+    <!--canvas class="constellation"></canvas-->
+    <div class="bg">
+      <video class="bg-video" loop muted autoplay id="primary-video">
+        <source src="assets/videos/hardware.mp4" type="video/mp4" />
+      </video>
+    </div>
+    
 
     <div class="container text-center">
 
       <div class="row h-full align-items-center">
         <div class="col-12 col-md-8 offset-md-2">
           <center>
-            <img src="assets/img/logo.png" alt="" style="height: 60%; width: 60%">
+            <!--
+            <img src="assets/img/logo-pink-white.png" alt="" style="height: 75%; width: 75%">
+            -->
+            <img src="assets/img/logo-pink-gear-blink-anim.svg" style="height: 75%; width: 75%">
           </center>
           <br>
           <p class="lead text-white fs-20">October 18-20th | 36 Hours | Amherst, MA</p>
@@ -88,7 +140,13 @@
 
         </div>
       </section> -->
+    
     <section class="section overflow-hidden">
+      <div class="bg">
+        <!--video class="bg-video" loop muted autoplay>
+          <source src="assets/videos/tables.mp4" type="video/mp4" />
+        </video-->
+      </div>
       <div class="container">
         <header class="section-header">
           <h2>We are Hack
@@ -96,8 +154,29 @@
           </h2>
         </header>
 
+        <div class="row gap-y align-items-center">
+          <div class="col-12 col-md-9">
+            <h4 class="primary-color">What?</h4>
+            <p>This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO.</p>
+            <p>This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO.</p>
+          </div>
+        </div>
+        <div class="row gap-y align-items-center">
+          <div class="col-12 col-md-3"></div>
+          <div class="col-12 col-md-9">
+            <h4 class="primary-color">When?</h4>
+            <p>This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO.</p>
+          </div>
+        </div>
+        <div class="row gap-y align-items-center">
+            <div class="col-12 col-md-9">
+              <h4 class="primary-color">Where?</h4>
+              <p>This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO.</p>
+            </div>
+          </div>
 
-        <div class="row">
+
+        <!--div class="row">
           <div class="offset-md-2 col-md-8">
             <div class="video-btn-wrapper" data-aos="fade-up">
               <img class="shadow-2 rounded-lg" src="assets/img/team/HackUMassVI.png" alt="watch a video">
@@ -105,21 +184,27 @@
                 <i class="fa fa-play"></i>
               </a>
             </div>
-
           </div>
-        </div>
+        </div-->
+
       </div>
     </section>
+  
     <!--
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       | Features
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
     <section class="section bg-gray">
+      <div class="bg">
+        <!--video class="bg-video" loop muted autoplay>
+          <source src="assets/videos/participants.mp4" type="video/mp4" />
+        </video-->
+      </div>
       <div class="container">
         <header class="section-header">
-          <small>Why HackUMass?</small>
-          <h2 class="primary-color">What Makes Us Different</h2>
+          <small style="font-size: 20px">Why HackUMass?</small>
+          <h2 class="primary-color">What Makes Us Unique</h2>
           <hr>
         </header>
 
@@ -129,53 +214,19 @@
           </div>
 
           <div class="col-12 col-md-7">
-            <h4 class="primary-color">The Tech</h4>
+            <h4 class="primary-color" style="font-weight:normal"><b>Hardware</b> from A to Z</h4>
             <p>At HackUMass we not only focus on creating a collaborative environment for developers/engineers to create awesome
               software projects, but also give all the tools that you will need to create awesome hardware hacks! With Arduinos,
               Raspberry Pis, circuit components, quadcopters, Oculus Rifts, and more, we have the hardware, you have the
               ideas, so come bring them to life at HackUMass.</p>
           </div>
         </div>
-
-
+        
         <hr>
 
         <div class="row gap-y align-items-center">
           <div class="col-12 col-md-7">
-            <h4 class="primary-color">The Food</h4>
-            <p>Soylent not cutting it for you? Don’t worry. We have the
-              <a href="http://www.food-management.com/news-trends/umass-tops-2016-princeton-review-best-campus-food-listing">#1 dining service in the nation!</a> And as a participant of HackUMass you will get access to all of our top-rated
-              dining halls and other dining facilities. Have any special dietary restrictions? Not to worry! We accommodate
-              all dietary restrictions.</p>
-          </div>
-
-          <div class="col-12 col-md-5">
-            <img class="rounded shadow-2" src="assets/img/useful/food.jpg" alt="...">
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="row gap-y align-items-center">
-          <div class="col-12 col-md-5">
-            <img class="rounded shadow-2" src="assets/img/useful/venue.jpg" alt="...">
-          </div>
-
-          <div class="col-12 col-md-7">
-            <h4 class="primary-color">The Venue</h4>
-            <p>Tired of hacking in some old gym? Say no more! HackUMass is hosted in the Integrative Learning Center (ILC),
-              one of the newest state-of-the-art academic buildings at UMass Amherst. Within the walls of the four-story
-              173,000 sq. ft. structure, the ILC provides 2,000 seats and plenty of spaces for hacking, sleeping, yoga, Super
-              Smash Bros, and much more! As one of the largest research universities in New England, we take our hacking
-              spaces seriously, and we hope you like it.</p>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="row gap-y align-items-center">
-          <div class="col-12 col-md-7">
-            <h4 class="primary-color">The Hackers</h4>
+            <h4 class="primary-color" style="font-weight:normal">Creative <b>Hackers</b></h4>
             <p>Our hackers come from all around the country and from many diverse backgrounds. Veteran hackers, first-timers,
               developers, engineers, entrepreneurs, and even non-tech majors -- this is who we are. Our goal is to bring
               together and inspire hackers from every background and provide opportunities like Ladies Storm Hackathons to
@@ -187,6 +238,46 @@
             <img class="rounded shadow-2" src="assets/img/useful/hackers.jpg" alt="...">
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section bg-gray">
+      <div class="bg">
+        <!--video class="bg-video" loop muted autoplay>
+          <source src="assets/videos/venue.mp4" type="video/mp4" />
+        </video-->
+      </div>
+      <div class="container">
+        <div class="row gap-y align-items-center">
+          <div class="col-12 col-md-5">
+            <img class="rounded shadow-2" src="assets/img/useful/venue.jpg" alt="...">
+          </div>
+
+          <div class="col-12 col-md-7">
+            <h4 class="primary-color" style="font-weight:normal">Incredible <b>Venue</b></h4>
+            <p>Tired of hacking in some old gym? Say no more! HackUMass is hosted in the Integrative Learning Center (ILC),
+              one of the newest state-of-the-art academic buildings at UMass Amherst. Within the walls of the four-story
+              173,000 sq. ft. structure, the ILC provides 2,000 seats and plenty of spaces for hacking, sleeping, yoga, Super
+              Smash Bros, and much more! As one of the largest research universities in New England, we take our hacking
+              spaces seriously, and we hope you like it.</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row gap-y align-items-center">
+            <div class="col-12 col-md-7">
+              <h4 class="primary-color" style="font-weight:normal">#1 <b>Dining</b></h4>
+              <p>Soylent not cutting it for you? Don’t worry. We have the
+                <a href="http://www.food-management.com/news-trends/umass-tops-2016-princeton-review-best-campus-food-listing">#1 dining service in the nation!</a> And as a participant of HackUMass you will get access to all of our top-rated
+                dining halls and other dining facilities. Have any special dietary restrictions? Not to worry! We accommodate
+                all dietary restrictions.</p>
+            </div>
+  
+            <div class="col-12 col-md-5">
+              <img class="rounded shadow-2" src="assets/img/useful/food.jpg" alt="...">
+            </div>
+          </div>
 
         <hr>
 
@@ -196,7 +287,7 @@
           </div>
 
           <div class="col-12 col-md-7">
-            <h4 class="primary-color">The Sponsors</h4>
+            <h4 class="primary-color" style="font-weight:normal">Generous <b>Sponsors</b></h4>
             <p>HackUMass wouldn't happen without the support of our awesome sponsors. From startups to big-name brands, we work
               with the innovators and the makers. Workshops, tech talks, sweet prizes, swag, mini-competitions, hardware/APIs
               -- we partner with the best in the industry to make this event come to life. Check out some of this year's
@@ -495,6 +586,54 @@
 
         <div class="swiper-container swiper-button-circular" data-slides-per-view="2" data-space-between="50" data-centered-slides="true">
           <div class="swiper-wrapper pb-0">
+            <div class="swiper-slide">
+              <div class="card card-shadowed">
+                <a href="https://twitter.com/pshenoy/status/1126603186729570304" style="color: black">
+                  <div class="card-block px-30">
+                    <p class="text-quoted mb-0">Our DeepRoof paper on using computer vision to estimate solar potential of home roof images was accepted for oral presentation to KDD (@kdd_news)!  Previously won 1st prize at @HackUMass hackathon. @umasscs authors S Lee, S. Iyengar, S Maji, @pshenoy #SmartCities #AIforGood</p>
+                    <div class="media align-items-center pb-0">
+                      <img class="avatar avatar-xs" src="assets/img/twitter/pshenoy_profile.png" alt="...">
+                      <div class="media-body lh-1">
+                        <h6 class="mb-0">Prashant Shenoy</h6>
+                        <small>@pshenoy </small>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card card-shadowed">
+                <a href="https://twitter.com/Vukovic96_/status/1051554445107040258" style="color: black">
+                  <div class="card-block px-30">
+                    <p class="text-quoted mb-0">Made top 3 finalists and won best game at #HackUMass. I’m so happy! Catch PRAKTIKA on computers near you later this week! </p>
+                    <div class="media align-items-center pb-0">
+                      <img class="avatar avatar-xs" src="assets/img/twitter/vic_profile.jpg" alt="...">
+                      <div class="media-body lh-1">
+                        <h6 class="mb-0">Alexander Vuković</h6>
+                        <small>@Vukovic96_ </small>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card card-shadowed">
+                <a href="https://twitter.com/inacubicle/status/1051505628080984070" style="color: black">
+                  <div class="card-block px-30">
+                    <p class="text-quoted mb-0">Great weekend mentoring @HackUMass! Big props to all the hackers there! Everyone should be proud of what they built</p>
+                    <div class="media align-items-center pb-0">
+                      <img class="avatar avatar-xs" src="assets/img/twitter/marc_profile.jpg" alt="...">
+                      <div class="media-body lh-1">
+                        <h6 class="mb-0">Marc Rudkowski</h6>
+                        <small>@inacubicle</small>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
 
             <div class="swiper-slide">
               <div class="card card-shadowed">
@@ -788,7 +927,29 @@
   <script src="assets/js/core.min.js"></script>
   <script src="assets/js/thesaas.min.js"></script>
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/isInViewport.js"></script>
+  <script src="assets/js/snap.svg-min.js"></script>
 
+  <script>
+    /*
+  window.addEventListener("load", function() {
+    document.querySelectorAll("video").forEach(function(e) { e.playbackSpeed = 0.5; });
+  });
+  jQuery(function() {
+    $(window).scroll(function() {
+      $('video').each(function(){
+        if ($(this).is(":in-viewport")) {
+          $(this)[0].play();
+        } else {
+          $(this)[0].pause();
+        }
+      });
+      // console.debug("video state: ", Array.from(document.querySelectorAll("video")).map(function(e) { return e.paused; }));
+    });
+  })
+  */
+
+  </script>
 </body>
 
 </html>
