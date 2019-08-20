@@ -39,3 +39,28 @@
   margin:0 auto;
   overflow:hidden;
 }
+
+/* Partner Section CSS */
+
+.partner{
+  margin: auto;
+  clear: both;
+  margin-top: 40px;
+  vertical-align: baseline;
+}
+.partner-small{
+  width: 20%;
+  height: 20%;
+}
+
+.partner-medium{
+  width: 25%;
+  height: 25%;
+}
+
+.partner-container{
+   display: flex;
+   justify-content: center;
+}
+
+

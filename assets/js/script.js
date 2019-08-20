@@ -2,7 +2,7 @@
 
 // Redirect to secure version of the website
 if (location.protocol != 'https:'){
-  if (location.protocol != 'file:'){
+  if (location.protocol != 'file:' && location.hostname != '127.0.0.1' && location.hostname != 'localhost'){
     location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
   }
 }
