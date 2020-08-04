@@ -76,6 +76,7 @@
   <link href="assets/css/core.min.css?1563139757687" rel="stylesheet">
   <link href="assets/css/thesaas.min.css?1563139757687" rel="stylesheet">
   <link href="assets/css/style.css?1563139757687" rel="stylesheet">
+  
   <style>
     .bg {
         position: absolute;
@@ -177,17 +178,7 @@
           </center>
           <br>
           <p class="lead text-white fs-20">October 18 &ndash; 20, 2019 | 36 Hours | Amherst, MA</p>
-
-          
-          
-          <!--
-          <a class="btn btn-xl btn-round btn-default" style="color:black" href="https://hackumass.typeform.com/to/PLIO2s">Volunteer</a>&nbsp; 
-          <a class="btn btn-xl btn-round btn-default " style="color:black" href="https://dashboard.hackumass.com/">Apply for Waitlist</a>
-          -->
           <a class="btn btn-xl btn-round btn-default " style="color:black" href="https://dashboard.hackumass.com/projects">View Projects</a>
-          <!--br />
-          <a class="btn btn-xl btn-round btn-default " style="background: none; border: none; cursor: none; margin-top: 5px; white-space: normal">Volunteer or apply for our waitlist!<br />Acceptances for submitted applications will be sent out soon</a>
-          -->
           
         </div>
       </div>
@@ -196,57 +187,42 @@
   </header>
   <!-- END Header -->
 
-<!--
-  <div style="position: absolute; bottom: 30px; width: 100%; color: white; font-size: 18px" id="minutefund">
-        
-      <center>
-      <a class="btn btn-xl btn-round btn-default" style="background: none; border: none; cursor: none; text-transform: none; letter-spacing: normal; white-space: normal; font-size: 16px; max-width: 65vw">
-        <div>
-          <span style="white-space: nowrap">Help make <b class="primary-color">HackUMass</b> a reality</span>
-          <span style="white-space: nowrap"> for <b class="primary-color">even more students</b></span>
-          <span style="white-space: nowrap"> by donating to</span>
-          <span style="white-space: nowrap"> our crowd-funding campaign:</span></div>
-      </a>
-        <a class="btn btn-xl btn-round btn-default " style="color:black; margin-left: -25px" href="https://minutefund.umass.edu/hackumass19">Donate</a>
-        </center>
-    <style>
-    @media (max-height: 600px) {
-      main.main-content {
-        margin-top: 100px;
-      }
-      #minutefund {
-        position: absolute;
-        top: 100vh;
-        background: gray;
-        height: 100px;
-        z-index: 9;
-      }
-    }
-    @media (max-width: 600px) {
-      #minutefund {
-        font-size: 14px;
-      }
-      #minutefund a.btn {
-        max-width: none !important;
-      }
-      #minutefund {
-        height: 200px;
-      }
-      main.main-content {
-        margin-top: 200px;
-      }
-      #minutefund {
-        position: absolute;
-        top: 100vh;
-        background: gray;
-        z-index: 9;
-      }
-    }
-    </style>
-</div>
--->
+
+
   <!-- Main container -->
   <main class="main-content">
+
+   
+  <button type="button" hidden="true" class="btn btn-primary" data-toggle="modal" data-target="#covidModal" id="modalOpen">Open modal</button>
+
+
+  <div class="modal fade" id="covidModal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+
+          <p class="h3">HackUMass 2020 Update</p>
+          <p class="lead">
+            The HackUMass Organizing Team is monitoring the COVID-19 situation closely and is adjusting plans accordingly.</p>
+          <br>
+          <p class="lead">
+            Currently, we plan on hosting a series of workshops online during the Fall 2020 semester, and will look at
+            hosting an in-person event during the Spring 2021 semester.
+          </p>
+          <br>
+          <p class="lead">
+            We will be monitoring our email at <a href="mailto: team@hackumass.com">team@hackumass.com</a> for any questions. 
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     <section class="section" style="padding-bottom: 0">
         <div class="container">
@@ -273,53 +249,9 @@
 
         </div>
       </section>
-    <!--
-    <section class="section overflow-hidden">
-      <div class="bg">
-      </div>
-      <div class="container">
-        <header class="section-header">
-          <h2>We are Hack<span class="primary-color">UMass</span></h2>
-        </header>
-
-        <div class="row gap-y align-items-center">
-          <div class="col-12 col-md-9">
-            <h4 class="primary-color">What?</h4>
-            <p>This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO.</p>
-            <p>This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO.</p>
-          </div>
-        </div>
-        <div class="row gap-y align-items-center">
-          <div class="col-12 col-md-3"></div>
-          <div class="col-12 col-md-9">
-            <h4 class="primary-color">When?</h4>
-            <p>This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO.</p>
-          </div>
-        </div>
-        <div class="row gap-y align-items-center">
-            <div class="col-12 col-md-9">
-              <h4 class="primary-color">Where?</h4>
-              <p>This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO. This is a paragraph that will read a lot better when it is filled with copy. TODO.</p>
-            </div>
-          </div>
-
-
-        <div class="row">
-          <div class="offset-md-2 col-md-8">
-            <div class="video-btn-wrapper" data-aos="fade-up">
-              <img class="shadow-2 rounded-lg" src="assets/img/team/HackUMassVI.png" alt="watch a video">
-              <a class="btn btn-circle btn-xl btn-primary" href="https://www.youtube.com/watch?v=QW1LiPFb0zM" data-provide="lightbox" style="border-color: #efaec1; background-color: #efaec1">
-                <i class="fa fa-play"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-  -->
+   
   
-    <!--
+      <!--
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       | Features
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
@@ -427,10 +359,10 @@
 
 
     <!--
-            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-            | FAQ
-            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-            !-->
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    | FAQ
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    !-->
 
     <section class="section" id="section-faq">
       <div class="container">
@@ -544,16 +476,16 @@
           </div>
 
            <!--Application Deadline Question. Will uncomment when applications open-->
-          <div class="card">
-            <h5 class="card-title">
-              <a data-toggle="collapse" data-parent="#accordion-general" href="#collapse-general-888">When is the deadline to apply?</a>
-            </h5>
-            <div id="collapse-general-888" class="collapse">
-              <div class="card-block">
-                The application deadline is September 27th.
+            <div class="card">
+              <h5 class="card-title">
+                <a data-toggle="collapse" data-parent="#accordion-general" href="#collapse-general-888">When is the deadline to apply?</a>
+              </h5>
+              <div id="collapse-general-888" class="collapse">
+                <div class="card-block">
+                  The application deadline is September 27th, 2019.
+                </div>
               </div>
             </div>
-          </div>
           <!--- -->
 
 
@@ -630,15 +562,6 @@
       <br />
       <br />
 
-        <!--header class="section-header" style="margin-top: 75px">
-          <h2 class="primary-color">Our Partners</h2>
-        </header-->
-
-<!--Isenberg Berthiamue
-            <div style="margin: auto;width: 30%;height: 30%;">
-              <a target="_blank" href="https://www.isenberg.umass.edu/centers/berthiaume-center-for-entrepreneurship"><img src="assets/img/partners/berthiume-medium.png" style="margin-top: 0%;margin-bottom: 20%;margin-right: 0%;margin-left: 0%;width: 100%;" alt=""></a>
-            </div>
---> 
         <div class="partner-container" style="margin-top: -75px">
             <div class="partner partner-medium">
               <br/><br/><br/>
@@ -909,6 +832,17 @@
   <script src="assets/js/script.js"></script>
   <script src="assets/js/isInViewport.js"></script>
   <script src="assets/js/snap.svg-min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+  <script>
+    $(document).ready(function() {
+      $("#modalOpen").trigger('click');
+    });
+  </script>
+
 
   <script>
     /*
