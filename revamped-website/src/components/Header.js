@@ -21,7 +21,7 @@ const Header = () => {
                             <img src={HackUMassLogo} alt="" style={{ height: "100%", width: "100%" }} />
                         </center>
                         <br />
-                        <p className="lead text-white fs-20">October/Novemeber XX &ndash; XX, 2021 | 36 Hours | Amherst, MA</p>
+                        <p className="lead text-white fs-20">November 5 &ndash; 7, 2021 | 36 Hours | Amherst, MA</p>
                         <a
                             className="btn btn-xl btn-round btn-default"
                             style={{ color: "black" }}
