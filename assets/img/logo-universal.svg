@@ -3,7 +3,7 @@
         <style>
             * {
                 --hackumass-color: #7494ea;
-                --secondary-color: #000000;
+                --secondary-color: #ffffff;
             }
 
             .cls-1,
