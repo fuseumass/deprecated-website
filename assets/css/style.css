@@ -84,3 +84,12 @@
 .half-rem-padding {
   padding: 0.5rem;
 }
+
+.larger-icon {
+  font-size: 1.75rem;
+}
+
+.social-tag {
+  padding: 0.5em; 
+  color: white;
+}
