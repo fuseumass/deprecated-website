@@ -1,20 +1,20 @@
 /* Bottom gear that is to the left of HackUMass. */
 #hackumass-logo-bottom-gear {
-    -webkit-animation: hackumass-logo-rotate 16s linear infinite;
-    -webkit-transform-origin: center;
+  -webkit-animation: hackumass-logo-rotate 16s linear infinite;
+  -webkit-transform-origin: center;
 }
 
 /* Middle gear that is to the left of HackUMass. */
 #hackumass-logo-middle-gear {
-    -webkit-animation: hackumass-logo-rotate 16s linear infinite;
-    -webkit-animation-direction: reverse;
-    -webkit-transform-origin: center;
+  -webkit-animation: hackumass-logo-rotate 16s linear infinite;
+  -webkit-animation-direction: reverse;
+  -webkit-transform-origin: center;
 }
 
 /* Top gear that is to the left of HackUMass. */
 #hackumass-logo-top-gear {
-    -webkit-animation: hackumass-logo-rotate 19.999s linear infinite;
-    -webkit-transform-origin: center;
+  -webkit-animation: hackumass-logo-rotate 19.999s linear infinite;
+  -webkit-transform-origin: center;
 }
 
 /* Rotation animation (webkit) */
