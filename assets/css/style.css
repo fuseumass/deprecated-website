@@ -113,10 +113,22 @@ h6 {
 }
 
 .larger-icon {
-  font-size: 1.75rem;
+    font-size: 2.5rem;
 }
 
 .social-tag {
-  padding: 0.5em; 
-  color: white;
+    padding: 1.5em;
+    color: white;
+}
+
+.social-facebook:hover {
+    color: #1877f2;
+}
+
+.social-instagram:hover {
+    color: #e4405f;
+}
+
+.social-twitter:hover {
+    color: #1da1f2;
 }
