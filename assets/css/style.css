@@ -111,3 +111,12 @@ h6 {
 .img-border {
     border: 0.25rem solid #7494ea;
 }
+
+.larger-icon {
+  font-size: 1.75rem;
+}
+
+.social-tag {
+  padding: 0.5em; 
+  color: white;
+}
