@@ -126,6 +126,20 @@
     .btn.btn-sm {
       padding: 4px 15px;
     }
+
+    .carousel .carousel-control-prev .carousel-control-prev-icon{
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23627DE5' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    } 
+
+    .carousel .carousel-control-next .carousel-control-next-icon{
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23627DE5' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    }
+    
+    #home-button:hover {
+      background-color: #627DE5;
+      border-color: #627DE5;
+      color: #ffffff !important;
+    }
   </style>
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="assets/img/favicon-hum9.ico">
@@ -140,12 +154,12 @@
       <div class="topbar-left">
         <!-- For now, nothing on the left bar of the top bar -->
         <!-- Enable banner if HackUMass IX affiliates with MLH again-->
-        <!-- <a id="mlh-trust-badge"
+        <a id="mlh-trust-badge"
           style="display:block;max-width:100px;min-width:60px;position:fixed;left:50px;top:0;width:10%;z-index:10000"
           href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=blue"
           target="_blank"><img
             src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-blue.svg"
-            alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a> -->
+            alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
         <!-- Enable banner if Pinnacle collaboration is on for HUM-IX-->
         <!-- <a id="pinnacle-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;left:200px;top:0;width:10%;z-index:10000" href="https://pinnacle.us.org/" target="_blank"><img src="assets/img/partners/pinnacle_badge.png" alt="Pinnacle" style="width:100%"></a> -->
       </div>
@@ -198,9 +212,8 @@
           </center>
           <br>
           <p class="lead text-white fs-20">November 5th - 7th, 2021 | 36 Hours | Amherst, MA and Online</p>
-          <a class="btn btn-xl btn-round btn-default " style="color:black"
-            href="https://fuseumass.github.io/HackUMass-VIII-Projects/public%3Fwinners=1.html">View HackUMass VIII
-            Projects</a>
+          <a id="home-button" class="btn btn-xl btn-round btn-default " style="color:black"
+            href="https://dashboard.hackumass.com/projects/public">View HackUMass IX Projects</a>
 
         </div>
       </div>
@@ -239,7 +252,7 @@
             </p> 
             <br> -->
             <!-- Event Application is Online -->
-            <h3 class="half-rem-padding">
+            <!-- <h3 class="half-rem-padding">
               <b>HackUMass IX Is On!</b>
             </h3>
             <p class="lead half-rem-padding">
@@ -267,18 +280,22 @@
                   All participants must sign up with their school email address.
                 </td>
               </tr>
-            </table>
+            </table> -->
             <!-- Event Application Deadline Crossed -->
-            <!-- <br>
-            <h3>
-              <b>Event Application for HackUMass IX Are Closed.</b>
+            <!-- <h3 class="half-rem-padding">
+              <b>Applications for HackUMass IX are Closed!</b>
             </h3>
-            <h6>Thank you all for applying! We hope to have a great event this year. If you are unable to attend then we hope to welcome you all back to HackUMass X next year.</h6>
-            <br>
-            <p class="lead">
+            <p class="lead half-rem-padding">
+              Thank you all for applying! We hope to have a great event this year. If you are unable to attend then we hope to welcome you all back to HackUMass X next year.
               If you have any questions, message us at <a href="mailto: team@hackumass.com">team@hackumass.com</a>.
             </p> -->
-
+            <!-- Organizing Team Applications Open -->
+            <h3 class="half-rem-padding">
+              <b>HackUMass X Organizing Team applications are open!</b>
+            </h3>
+            <p class="lead half-rem-padding">
+              Visit the <a href="https://hackumass.com/apply">HackUMass X Organizing Team Application</a> if you are interested in joining the team responsible for handling the 10th iteration of the largest student-run technology event on campus. If you have any questions, message us at <a href="mailto: team@hackumass.com">team@hackumass.com</a>.
+            </p>
           </div>
         </div>
       </div>
@@ -616,17 +633,21 @@
         </div>
 
         <div class="partner partner-medium">
-          <a target="_blank" href="https://home.kpmg/xx/en/home.html" style="margin-top: 20px"><img
-              src="assets/img/sponsors/diamond/KPMG.png" alt="KPMG"></a>
+          <a target="_blank" href="https://www.cics.umass.edu/" style="margin-top: 20px; width: 70%; height: 70%;"><img
+              src="assets/img/sponsors/diamond/CICS.jpeg" alt="CICS"></a>
+        </div>
+
+        <div class="partner partner-medium">
+          <a target="_blank" href="https://www.mitre.org/" style="margin-top: 80px"><img
+              src="assets/img/sponsors/gold/MITRE.png" alt="MITRE"></a>
         </div>
 
       </div>
 
       <div class="partner-container" style="margin-top: -30px">
-
         <div class="partner partner-medium">
-          <a target="_blank" href="https://www.cics.umass.edu/" style="margin-top: 20px; width: 70%; height: 70%;"><img
-              src="assets/img/sponsors/diamond/CICS.jpeg" alt="CICS"></a>
+          <a target="_blank" href="https://www.digitalocean.com/" style="margin-top: 20px; width: 85%; height: 85%;"><img
+              src="assets/img/sponsors/diamond/DigitalOcean.png" alt="DigitalOcean"></a>
         </div>
         
         <div class="partner partner-medium">
@@ -634,10 +655,6 @@
               src="assets/img/sponsors/diamond/engineering.png" alt="Engineering"></a>
         </div>
 
-        <div class="partner partner-medium">
-          <a target="_blank" href="https://www.digitalocean.com/" style="margin-top: 20px; width: 85%; height: 85%;"><img
-              src="assets/img/sponsors/diamond/DigitalOcean.png" alt="DigitalOcean"></a>
-        </div>
 
       </div>
 
@@ -654,27 +671,31 @@
 
         <div class="partner partner-small" style="width: 30%; height: 30%;"> 
           <a target="_blank" href="https://www.jetbrains.com" style="width: 200px; height: 200px;"><img
-              src="assets/img/partners/JetBrains.png" alt="JetBrains" height=150 /></a>
+              src="assets/img/partners/JetBrains.png" alt="JetBrains" height=150 style="width: 175px; height: 175px;"/></a>
         </div>
 
         <div class="partner partner-small" style="width: 20%; height: 20%;">
           <a target="_blank" href="https://www.draftkings.com/"><img
-              src="assets/img/partners/draft-kings.png" alt="DraftKings" height=150 /></a>
+              src="assets/img/partners/draftkings-online.png" alt="DraftKings" height=150/></a>
         </div>
 
       </div>
 
 
       <div class="partner-container" style="margin-top: 50px">
-
         <div class="partner partner-small">
-          <a target="_blank" href="https://www.twilio.com/" style="margin-top: 40px; width: 80%; height: 80%; margin-left: 100px;"><img
+          <a target="_blank" href="https://www.twilio.com/" style="margin-top: 40px; width: 80%; height: 80%;"><img
               src="assets/img/partners/twilio.png" alt="Twilio"></a>
         </div>
 
         <div class="partner partner-small">
-          <a target="_blank" href="https://www.umassamherstm5.org/" style="margin-top: 15px; width: 40%; height: 40%; margin-right: 200px;"><img
+          <a target="_blank" href="https://www.umassamherstm5.org/" style="margin-top: 15px; width: 40%; height: 40%;"><img
               src="assets/img/partners/M5Logo.png" alt="M5"></a>
+        </div>
+
+        <div class="partner partner-small">
+          <a target="_blank" href="https://cloud.google.com/" style="margin-top: 60px;"><img
+              src="assets/img/sponsors/mlh/GoogleCloud.png" alt="GoogleCloud"></a>
         </div>
 
       </div>
@@ -786,6 +807,211 @@
 
     </section> -->
 
+    <!--
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        | The Organizing Team
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        -->
+    <section class="section bg-gray">
+      <div class="container">
+        <header class="section-header">
+          <small style="font-size: 20px">Our Team</small>
+          <h2 class="primary-color">Meet the people behind it!</h2>
+        </header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- Event Co-Directors Row -->
+              <div class="row gap-y align-items-center">
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/sakshi_gera.jpg" alt="Sakshi Gera">
+                  <h5 class="primary-color">Sakshi Gera</h5>
+                  <h6 class="team-role">Co-Director, HackUMass IX</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/vinisha_dhuleshia.jpg" alt="Vinisha Dhuleshia">
+                  <h5 class="primary-color">Vinisha Dhuleshia</h5>
+                  <h6 class="team-role">Co-Director, HackUMass IX</h6>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- Subteam Directors Row -->
+              <div class="row gap-y align-items-center">
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/akshat_sahay.jpg" alt="Akshat Sahay">
+                  <h5 class="primary-color">Akshat Sahay</h5>
+                  <h6 class="team-role">Co-Director, Hardware Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/cody_richter.jpg" alt="Cody Richter">
+                  <h5 class="primary-color">Cody Richter</h5>
+                  <h6 class="team-role">Director, Technology Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/eilat_tabak.jpg" alt="Eilat Tabak">
+                  <h5 class="primary-color">Eilat Tabak</h5>
+                  <h6 class="team-role">Director, Logistics Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/nandini_sivakumar.jpg" alt="Nandini Sivakumar">
+                  <h5 class="primary-color">Nandini Sivakumar</h5>
+                  <h6 class="team-role">Co-Director, Hardware Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/tarang_mittal.jpg" alt="Tarang Mittal">
+                  <h5 class="primary-color">Tarang Mittal</h5>
+                  <h6 class="team-role">Director, Sponsorship Team</h6>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- Members Row -->
+              <div class="row gap-y align-items-center">
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/aahana_sehrawat.jpg" alt="Aahana Sehrawat">
+                  <h5 class="primary-color">Aahana Sehrawat</h5>
+                  <h6 class="team-role">Member, Technology Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/adithya_kethu.jpg" alt="Adithya Kethu">
+                  <h5 class="primary-color">Adithya Kethu</h5>
+                  <h6 class="team-role">Member, Technology Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/aditya_vikram_singh.jpg" alt="Aditya Vikram Singh">
+                  <h5 class="primary-color">Aditya Vikram Singh</h5>
+                  <h6 class="team-role">Member, Technology & Design Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/annette_sebastian.jpg" alt="Annette Sebastian">
+                  <h5 class="primary-color">Annette Sebastian</h5>
+                  <h6 class="team-role">Member, Public Relations Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/anush_rathod.jpg" alt="Anush Rathod">
+                  <h5 class="primary-color">Anush Rathod</h5>
+                  <h6 class="team-role">Member, Hardware Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/anushree_patil.jpg" alt="Anushree Patil">
+                  <h5 class="primary-color">Anushree Patil</h5>
+                  <h6 class="team-role">Member, Public Relations Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/catherine_zhu.jpg" alt="Catherine Zhu">
+                  <h5 class="primary-color">Catherine Zhu</h5>
+                  <h6 class="team-role">Member, Logistics Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/eugene_mak.jpg" alt="Eugene Mak">
+                  <h5 class="primary-color">Eugene Mak</h5>
+                  <h6 class="team-role">Member, Logistics Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/foram_patel.jpg" alt="Foram Patel">
+                  <h5 class="primary-color">Foram Patel</h5>
+                  <h6 class="team-role">Member, Logistics Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/justin_baltazar.jpg" alt="Justin Baltazar">
+                  <h5 class="primary-color">Justin Baltazar</h5>
+                  <h6 class="team-role">Member, Sponsorship Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/manan_talwar.jpg" alt="Manan Talwar">
+                  <h5 class="primary-color">Manan Talwar</h5>
+                  <h6 class="team-role">Member, Technology Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/manmeet_singh_tuteja.jpg" alt="Manmeet Singh Tuteja">
+                  <h5 class="primary-color">Manmeet Singh Tuteja</h5>
+                  <h6 class="team-role">Member, Technology Team</h6>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- Members Row -->
+              <div class="row gap-y align-items-center">
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/nafis_rahman.jpg" alt="Nafis Rahman">
+                  <h5 class="primary-color">Nafis Rahman</h5>
+                  <h6 class="team-role">Member, Technology Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/qingchuan_ding.jpg" alt="Qingchuan Ding">
+                  <h5 class="primary-color">Qingchuan Ding</h5>
+                  <h6 class="team-role">Member, Technology Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/raymond_li.jpg" alt="Raymond Li">
+                  <h5 class="primary-color">Raymond Li</h5>
+                  <h6 class="team-role">Member, Logistics Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/rupak_poddar.jpg" alt="Rupak Poddar">
+                  <h5 class="primary-color">Rupak Poddar</h5>
+                  <h6 class="team-role">Member, Hardware Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/samridh_tuteja.jpg" alt="Samridh Tuteja">
+                  <h5 class="primary-color">Samridh Tuteja</h5>
+                  <h6 class="team-role">Member, Hardware Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/shubhankar_tripathy.jpg" alt="Shubhankar Tripathy">
+                  <h5 class="primary-color">Shubhankar Tripathy</h5>
+                  <h6 class="team-role">Member, Design Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/simon_andrews.jpg" alt="Simon Andrews">
+                  <h5 class="primary-color">Simon Andrews</h5>
+                  <h6 class="team-role">Member, Sponsorship Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/suma_movva.jpg" alt="Suma Movva">
+                  <h5 class="primary-color">Suma Movva</h5>
+                  <h6 class="team-role">Member, Sponsorship Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/varsha_jawahar.jpg" alt="Varsha Jawahar">
+                  <h5 class="primary-color">Varsha Jawahar</h5>
+                  <h6 class="team-role">Member, Technology Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/vibhhu_sharma.jpg" alt="Vibhhu Sharma">
+                  <h5 class="primary-color">Vibhhu Sharma</h5>
+                  <h6 class="team-role">Member, Logistics Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/vivienne_tam.jpg" alt="Vivienne Tam">
+                  <h5 class="primary-color">Vivienne Tam</h5>
+                  <h6 class="team-role">Member, Logistics Team</h6>
+                </div>
+                <div class="col-md-3 col-sm-4 mx-auto text-center">
+                  <img class="rounded-circle shadow-2 img-border" src="assets/img/team/yen_linh_chit.jpg" alt="Yen-Linh Chit">
+                  <h5 class="primary-color">Yen-Linh Chit</h5>
+                  <h6 class="team-role">Member, Design & PR Team</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>        
+      </div>
+    </section>
 
     <section class="section text-white" style="background-color: rgb(100,100,100)">
       <div class="container">
