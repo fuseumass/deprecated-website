@@ -6,7 +6,7 @@
 
 ![Universal Logo](assets/img/logo-universal.svg)
 
-**Check it out here: hackumass.com!**
+**Check it out here: [hackumass.com](https://hackumass.com/)!**
 
 ## How does it work?
 
