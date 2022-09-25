@@ -2,7 +2,7 @@
     <defs>
         <style>
             * {
-                --hackumass-color: #7494ea;
+                --hackumass-color: #ffcc53;
                 --secondary-color: #ffffff;
             }
 
