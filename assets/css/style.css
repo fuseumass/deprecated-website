@@ -112,6 +112,12 @@ h6 {
   border: 0.25rem solid #ffcc53;
 }
 
+.object-fit-cover {
+  width:250px;
+  height:250px;
+  object-fit:cover
+}
+
 .larger-icon {
   font-size: 2.5rem;
 }
