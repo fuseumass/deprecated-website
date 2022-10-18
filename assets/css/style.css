@@ -113,8 +113,8 @@ h6 {
 }
 
 .object-fit-cover {
-  width:250px;
-  height:250px;
+  max-width: 80%;
+  max-height: 80%;
   object-fit:cover
 }
 
