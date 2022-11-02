@@ -30,7 +30,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+h7 {
   margin: 0 !important;
 }
 
@@ -191,3 +192,13 @@ video.bg-video {
   border-color: #ffcc53;
   color: #ffffff !important;
 }
+#textshadow 
+{     
+  color: white;
+  text-shadow:
+   -1px -1px 0 #272727,  
+    1px -1px 0 #272727,
+    -1px 1px 0 #272727,
+     1px 1px 0 #272727;
+}
+
