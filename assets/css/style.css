@@ -49,7 +49,7 @@ h7 {
 }
 
 .primary-color {
-  color: #ffcc53;
+  color: #af6ff8;
 }
 
 .humv-video {
@@ -111,7 +111,7 @@ h7 {
 }
 
 .img-border {
-  border: 0.25rem solid #ffcc53;
+  border: 0.25rem solid #af6ff8;
 }
 
 .object-fit-cover {
@@ -195,8 +195,8 @@ video.bg-video {
 }
 
 #home-button:hover {
-  background-color: #ffcc53;
-  border-color: #ffcc53;
+  background-color: #af6ff8;
+  border-color: #af6ff8;
   color: #ffffff !important;
 }
 #textshadow
@@ -250,7 +250,7 @@ video.bg-video {
 
 }
 .events-detail li:hover {
-  background: #ffcc53;
+  background: #af6ff8;
 }
 .event-time {
   font-weight: 900;
