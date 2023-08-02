@@ -1,4 +1,4 @@
-# <img src="./assets/img/favicon-hum9.png" height="24px" width="24px" alt="HackUMass Gears"> HackUMass Website
+# <img src="./assets/img/favicon.png" height="24px" width="24px" alt="HackUMass Gears"> HackUMass Website
 
 [![Repository Status](https://img.shields.io/badge/Repository%20Status-Actively%20Maintained-dark%20green.svg)](https://github.com/fuseumass/hackumass.github.io)
 [![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://hackumass.com/)
