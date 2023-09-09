@@ -50,6 +50,7 @@ h7 {
 
 .primary-color {
   color: #af6ff8;
+ text-shadow: none; 
 }
 
 .humv-video {
