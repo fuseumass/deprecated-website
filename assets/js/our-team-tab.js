@@ -29,13 +29,11 @@ Hardware Member`;
 const logisticsNames = `Ruchi Gupta
 Ben Burns
 Jason Dullaghan
-Anisha Prathi
 Dev Mehta
 Manya Phutela
 Isaac Heitmann`;
 
 const logisticsRoles = `Logistics Director
-Logistics Member
 Logistics Member
 Logistics Member
 Logistics Member
