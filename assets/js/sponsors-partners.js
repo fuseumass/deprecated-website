@@ -36,7 +36,6 @@ const makeCompanyRow = () => {
   rowDivElement.classList.add(
     'row',
     'gap-y',
-    'px-3',
     'justify-content-center',
     'align-items-center',
   );
@@ -58,7 +57,10 @@ const makeCompanyCol = (name, link, relation) => {
 
 const sponsorsContainer = document.getElementById('sponsors-container');
 sponsorsContainer.style.maxWidth = '70%';
+sponsorsContainer.style.margin = 'auto';
 const partnersContainer = document.getElementById('partners-container');
+partnersContainer.style.maxWidth = '70%';
+partnersContainer.style.margin = 'auto';
 
 const sponsorsRow = makeCompanyRow();
 const partnersRow = makeCompanyRow();
