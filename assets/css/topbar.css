@@ -1,15 +1,10 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
 
-body {
-  padding-top: 70px;
-  background: #656565;
-}
-
-.navbar-top-top.scrolled {
+.topbar-fixed.scrolled {
   background-color: hsl(0, 48%, 65%) !important;
   transition: background-color 200ms linear;
 }
 
-.navbar-fixed-top.scrolled .nav-link {
+.topbar-fixed.scrolled .nav-link {
   color:#555;
 }
