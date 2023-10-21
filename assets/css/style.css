@@ -13,7 +13,6 @@
   padding-top: 60px;
 }
 
-
 @media (max-width: 768px) {
   .thesaas-sections-split .section {
     margin: 30px 0 100px;
@@ -34,6 +33,28 @@ h5,
 h6,
 h7 {
   margin: 0 !important;
+}
+
+/* Members Tabs */
+
+#tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  border-bottom: 4px solid !important;
+}
+
+.nav-item:hover {
+  color: #af6ff8;
+}
+
+#tabs .nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  font-size: 1.25em;
+}
+
+.nav > a {
+  display: inline-block;
 }
 
 .team-role {
@@ -117,7 +138,7 @@ h7 {
 .object-fit-cover {
   max-width: 80%;
   max-height: 80%;
-  object-fit:cover
+  object-fit: cover;
 }
 
 .larger-icon {
@@ -199,17 +220,13 @@ video.bg-video {
   border-color: #af6ff8;
   color: #ffffff !important;
 }
-#textshadow
-{
+#textshadow {
   color: white;
-  text-shadow:
-   -1px -1px 0 #272727,
-    1px -1px 0 #272727,
-    -1px 1px 0 #272727,
-     1px 1px 0 #272727;
+  text-shadow: -1px -1px 0 #272727, 1px -1px 0 #272727, -1px 1px 0 #272727,
+    1px 1px 0 #272727;
 }
 /* SCHEDULE */
-.schedule{
+.schedule {
   padding-bottom: 5%;
 }
 .main {
@@ -220,7 +237,6 @@ video.bg-video {
   width: 17%;
   padding: 15% 1% 0 0;
   float: left;
-
 }
 .date h3 {
   font-size: 1.5em;
@@ -235,19 +251,16 @@ video.bg-video {
   border-left: 1px solid #000;
   margin-top: 10%;
   padding-top: 3%;
-
 }
 .events-detail {
   max-width: 550px;
   list-style-type: none;
-
 }
 .events-detail li {
   padding: 10px;
   border-bottom: 1px dashed #000;
   line-height: 22px;
   transition: ease 0.4s all;
-
 }
 .events-detail li:hover {
   background: #af6ff8;
@@ -268,7 +281,7 @@ video.bg-video {
 }
 .event-location {
   font-size: 0.8em;
-  color: #FF809E;
+  color: #ff809e;
   margin-left: 70px;
 }
 @media all and (max-width: 641px) {
