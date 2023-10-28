@@ -9,3 +9,7 @@
 .topbar-fixed.scrolled .nav-link {
   color:rgb(85, 85, 85);
 }
+
+#topbar {
+  transition: top 0.3s;
+}
