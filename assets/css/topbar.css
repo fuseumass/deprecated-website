@@ -1,10 +1,11 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
 
 .topbar-fixed.scrolled {
-  background-color: hsl(0, 48%, 65%) !important;
+  background-color: #af6ff8 !important;
+  opacity: 0.7 !important;
   transition: background-color 200ms linear;
 }
 
 .topbar-fixed.scrolled .nav-link {
-  color:#555;
+  color:rgb(85, 85, 85);
 }
