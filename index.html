@@ -6,6 +6,7 @@
   <!-- Add the v6 core styles and then select the individual styles you need, like Solid and Brands -->
   <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
   <link href="assets/css/brands.min.css" rel="stylesheet" />
+  <link href="assets/css/topbar.css" rel="stylesheet"/>
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -94,7 +95,7 @@
 
 <body>
   <!-- Topbar -->
-  <nav class="topbar topbar-inverse topbar-expand-sm">
+  <nav id="topbar" class="topbar topbar-inverse topbar-expand-sm topbar-fixed" style="position:fixed;right:0;background:rgb(58, 58, 58);width:100%; height: 10%; opacity: 1.0;">
     <div class="container">
       <div class="topbar-left">
         <!-- For now, nothing on the left bar of the top bar -->
@@ -113,13 +114,13 @@
         <!-- <a id="pinnacle-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;left:200px;top:0;width:10%;z-index:10000" href="https://pinnacle.us.org/" target="_blank"><img src="assets/img/partners/pinnacle_badge.png" alt="Pinnacle" style="width:100%"></a> -->
       </div>
 
-      <div class="topbar-right">
+      <div class="topbar-right" style="position:absolute; right:0">
         <!-- <a class="btn btn-sm btn-outline btn-white hidden-sm-down" href="https://about.hackumass.com/">About Us</a>&nbsp; -->
-        <a class="btn btn-sm btn-outline btn-white hidden-sm-down" href="https://about.hackumass.com/opensource.html"
+        <a class="btn btn-sm btn-outline btn-white hidden-sm-down" style="opacity:1.0" href="https://about.hackumass.com/opensource.html"
           target="_blank">Open Source</a>&nbsp;
-        <a class="btn btn-sm btn-outline btn-white" href="https://hackumass-x.devpost.com/project-gallery"
+        <a class="btn btn-sm btn-outline btn-white" style="opacity:1.0" href="https://hackumass-x.devpost.com/project-gallery"
           target="_blank">Previous Projects</a>&nbsp;
-        <a class="btn btn-sm btn-outline btn-white" href="https://discord.gg/aqbbYnkKpd" target="_blank">Discord</a>
+        <a class="btn btn-sm btn-outline btn-white" style="opacity:1.0" href="https://discord.gg/aqbbYnkKpd" target="_blank">Discord</a>
       </div>
     </div>
   </nav>
@@ -1252,6 +1253,7 @@
     <script src="assets/js/our-team-tab.js"></script>
     <script src="assets/js/sponsors-partners.js"></script>
     <script src="assets/js/core.min.js"></script>
+    <script src="assets/js/topbar.js"></script>
     <script src="assets/js/thesaas.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/isInViewport.js"></script>
