@@ -1,15 +1,19 @@
+// these names should match the image title
 const sponsors = [
   'UMass-Engineering',
   'UMass-Manning-CICS',
   'UMass-Berthiaume-Center',
   'MITRE',
+  'KPMG',
 ];
 const sponsorsLinks = [
   'https://engineering.umass.edu/',
   'https://www.cics.umass.edu/',
   'https://www.isenberg.umass.edu/centers/berthiaume-center-for-entrepreneurship',
   'https://www.mitre.org/',
+  'https://kpmg.com/xx/en/home.html',
 ];
+// these names should match the image title
 const partners = [
   'Wolfram-Alpha',
   'echo3d',
