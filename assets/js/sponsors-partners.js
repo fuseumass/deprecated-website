@@ -23,6 +23,7 @@ const partners = [
   'Major-League-Hacking',
   'Standout-Stickers',
   'Silver-Screen-Design',
+  'Analog-Devices',
 ];
 const partnersLinks = [
   'https://www.wolfram.com/',
@@ -33,6 +34,7 @@ const partnersLinks = [
   'https://mlh.io/',
   'http://hackp.ac/mlh-StandOutStickers-hackathons',
   'https://www.silverscreendesign.com/',
+  'https://www.analog.com/en/index.html',
 ];
 
 const makeCompanyRow = () => {
