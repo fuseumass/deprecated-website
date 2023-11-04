@@ -5,7 +5,6 @@ const sponsors = [
   'UMass-Berthiaume-Center',
   'MITRE',
   'KPMG',
-  'Analog-Devices',
 ];
 const sponsorsLinks = [
   'https://engineering.umass.edu/',
@@ -13,7 +12,6 @@ const sponsorsLinks = [
   'https://www.isenberg.umass.edu/centers/berthiaume-center-for-entrepreneurship',
   'https://www.mitre.org/',
   'https://kpmg.com/xx/en/home.html',
-  'https://www.analog.com/en/index.html',
 ];
 // these names should match the image title
 const partners = [
@@ -25,6 +23,7 @@ const partners = [
   'Major-League-Hacking',
   'Standout-Stickers',
   'Silver-Screen-Design',
+  'Analog-Devices',
 ];
 const partnersLinks = [
   'https://www.wolfram.com/',
@@ -35,6 +34,7 @@ const partnersLinks = [
   'https://mlh.io/',
   'http://hackp.ac/mlh-StandOutStickers-hackathons',
   'https://www.silverscreendesign.com/',
+  'https://www.analog.com/en/index.html',
 ];
 
 const makeCompanyRow = () => {
