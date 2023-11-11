@@ -6,8 +6,8 @@ Jasmine Cai`;
 const directorRoles = `Co-Director
 Co-Director`;
 
-const hardwareNames = `Anushree Patil
-Samridh Tuteja
+const hardwareNames = `Samridh Tuteja
+Anushree Patil
 Poul Holm
 Douglas Tran
 Adi Nelson
@@ -16,7 +16,7 @@ Monil Bhavsar
 Kavya Manchanda
 Yav Rohatgi`;
 
-const hardwareRoles = `Hardware Co-Director
+const hardwareRoles = `Hardware Director
 Hardware Co-Director
 Hardware Member
 Hardware Member
