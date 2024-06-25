@@ -43,7 +43,7 @@ h7 {
 }
 
 .nav-item:hover {
-  color: #af6ff8;
+  color: #2832c2;
 }
 
 #tabs .nav-tabs .nav-link {
@@ -70,7 +70,7 @@ h7 {
 }
 
 .primary-color {
-  color: #af6ff8;
+  color: #2832c2;
 }
 
 .humv-video {
@@ -132,7 +132,7 @@ h7 {
 }
 
 .img-border {
-  border: 0.25rem solid #af6ff8;
+  border: 0.25rem solid #2832c2;
 }
 
 .object-fit-cover {
@@ -216,8 +216,8 @@ video.bg-video {
 }
 
 #home-button:hover {
-  background-color: #af6ff8;
-  border-color: #af6ff8;
+  background-color: #2832c2;
+  border-color: #2832c2;
   color: #ffffff !important;
 }
 #textshadow {
@@ -263,7 +263,7 @@ video.bg-video {
   transition: ease 0.4s all;
 }
 .events-detail li:hover {
-  background: #af6ff8;
+  background: #2832c2;
 }
 .event-time {
   font-weight: 900;
