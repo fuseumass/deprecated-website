@@ -1,3 +1,7 @@
+<div style="background-color: #ffcc00; padding: 10px; text-align: center;">
+    <strong>Notice:</strong> This website is deprecated. Please visit the new website at 
+    <a href="https://github.com/fuseumass/hackumass-website" target="_blank">HackUMass New Repository</a>.
+</div>
 # <img src="./assets/img/favicon.png" height="24px" width="24px" alt="HackUMass Gears"> HackUMass Website
 
 [![Repository Status](https://img.shields.io/badge/Repository%20Status-Actively%20Maintained-dark%20green.svg)](https://github.com/fuseumass/hackumass.github.io)
